@@ -1,0 +1,5 @@
+@startuml acitvity_diagram
+start
+stop
+
+@enduml
