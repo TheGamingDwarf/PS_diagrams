@@ -1,0 +1,5 @@
+@startuml Global_process_flow
+
+Ernie -> Bert : Hello, World!
+
+@enduml
