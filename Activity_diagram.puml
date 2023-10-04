@@ -1,5 +1,19 @@
 @startuml acitvity_diagram
 start
-stop
+
+:Init;
+:Stack check;
+repeat
+backward:Restock parts;
+repeat while (Stack full?) is (no)
+->yes;
+:Move gripper tool to storage 1;
+:Grab base;
+:Move to assembly table;
+:Place base;
+:Move gripper tool to storage 4;
+:Grab extension piece;
+
+end
 
 @enduml
