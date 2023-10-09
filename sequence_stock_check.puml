@@ -1,0 +1,10 @@
+@startuml sequence_stock_check
+
+participant Participant as Fool
+operator    Operater    as Fool1
+twincatplc  TwinCatPLC  as Fool2
+robotarm    Robotarm    as Fool3
+
+
+
+@enduml
