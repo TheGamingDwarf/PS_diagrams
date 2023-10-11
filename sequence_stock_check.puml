@@ -1,10 +1,30 @@
-@startuml sequence_stock_check
+@startuml
+control     PLC             as plc
+actor       Operator        as ops
+entity      Robotarm        as rob
+collections "Parts Stock"     as prt
 
-participant Participant as Fool
-operator    Operater    as Fool1
-twincatplc  TwinCatPLC  as Fool2
-robotarm    Robotarm    as Fool3
+plc -> rob : Move gripper above Parts Stock
+rob -> plc : Response move
+plc -> prt : Do you have parts?
+prt -> prt : Stock check
 
+alt yes stock case
 
+prt -> plc : Yes
+plc -> rob : Move to pick location
+rob -> plc : Response move
+else no stock case
+    prt -> plc : No
+    plc -> ops : No stock
+    ops -> ops : Grab more parts
+    ops -> prt : Fill stock
+    prt -> plc : Stock is filled
+    plc -> ops : Stock is filled confirmed, continue program?
+    ops -> plc : Continue
+    plc -> rob : Move to pick location
+    rob -> plc : Response move
+
+end
 
 @enduml
