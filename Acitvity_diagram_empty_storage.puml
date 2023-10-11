@@ -1,0 +1,16 @@
+@startuml acitvity_diagram_empty_storage
+start
+
+repeat
+    :Test for part in storage;
+
+backward :Greenlight program to continue;
+repeat while (Part available?) is (yes)
+->no;
+:Inform operator;
+:Pause program;
+:Wait for "Go" signal;
+:Resume program;
+
+end
+@enduml
