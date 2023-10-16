@@ -1,0 +1,23 @@
+@startuml screw_part
+control     PLC             as plc
+entity      Robotarm        as rob
+collections "Assembly Table"   as ass
+
+plc -> rob : Move gripper above Assembly Station vertically
+rob -> plc : Response move
+plc -> rob : Move gripper next to part on Station
+rob -> plc : Response move
+loop 3 times
+    plc -> rob : Close gripper
+    rob -> plc : Response move
+    plc -> rob : Rotate +180 degrees
+    rob -> plc : Response move
+    plc -> rob : Open gripper
+    rob -> plc : Response move
+    plc -> rob : Rotate -180 degrees
+    rob -> plc : Response move
+end
+plc -> rob : Move gripper above Assembly Station vertically
+rob -> plc : Response move
+
+@enduml
