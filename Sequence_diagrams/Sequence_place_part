@@ -1,0 +1,15 @@
+@startuml place_part
+control     PLC             as plc
+entity      Robotarm        as rob
+collections "Assembly Station"   as ass
+
+plc -> rob : Move gripper above Assembly Station
+rob -> plc : Response move
+plc -> rob : Move close above Assembly Station
+rob -> plc : Response move
+plc -> rob : Open gripper
+rob -> plc : Response move
+plc -> rob : Move above Assembly Station
+rob -> plc : Response move
+
+@enduml

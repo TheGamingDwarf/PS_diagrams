@@ -1,0 +1,20 @@
+@startuml grab_part
+control     PLC             as plc
+entity      Robotarm        as rob
+collections "Parts Stock"   as prt
+
+plc -> prt : Stock check
+prt -> prt : Stock check
+prt -> plc : Stock ok
+plc -> rob : Move gripper above Parts Stock
+rob -> plc : Response move
+plc -> rob : Open gripper
+rob -> plc : Response move
+plc -> rob : Move above part
+rob -> plc : Response move
+plc -> rob : Close gripper
+rob -> plc : Response move
+plc -> rob : Move above Parts Stock
+rob -> plc : Response move
+
+@enduml

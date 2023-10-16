@@ -1,4 +1,4 @@
-@startuml
+@startuml stock_check
 control     PLC             as plc
 actor       Operator        as ops
 entity      Robotarm        as rob
