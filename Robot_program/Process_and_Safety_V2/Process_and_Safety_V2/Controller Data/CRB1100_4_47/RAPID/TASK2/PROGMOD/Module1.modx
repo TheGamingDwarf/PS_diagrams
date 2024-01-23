@@ -1,0 +1,145 @@
+MODULE Module1
+    CONST robtarget pOppakkenSnijring_20:=[[11.83,170.808822668,-188.502785265],[1,-0.000000784,0,0],[1,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget pOppakkenSnijring_10:=[[11.83,170.809139248,13.497214734],[1,-0.000000784,0,0],[1,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget pOppakkenGroteMoer_10:=[[18.00216669,185.765627355,18.998183197],[0.999999284,0.000002364,-0.000010202,0.001196273],[1,-1,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget pOppakkenGroteMoer_20:=[[18.006246487,185.766577781,-181.00181676],[0.999999284,0.000002364,-0.000010202,0.001196273],[1,-1,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget pOppakkenKleineMoer_10:=[[15.05,268.809153632,12.497268931],[1,-0.000000009,0,0],[0,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget pOppakkenKleineMoer_20:=[[15.05,268.809150032,-187.502731069],[1,-0.000000009,0,0],[0,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget pAankomen_10:=[[258.75,8.75,-1.5],[0,-0.707106781,0.707106781,0],[-1,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget pOppakkenSmoring1_10:=[[45,8.75,-34.4],[0.5,0.5,-0.5,-0.5],[-2,-2,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget pOppakkenSmoring1_20:=[[95,8.75,-34.4],[0.5,0.5,-0.5,-0.5],[-1,-1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget pOppakkenSmoring2_10:=[[45,8.75,-90.4],[0.5,0.5,-0.5,-0.5],[-2,-2,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget pOppakkenSmoring2_20:=[[95,8.75,-90.4],[0.5,0.5,-0.5,-0.5],[-1,-1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget pOppakkenSmoring3_10:=[[45,8.75,-150.4],[0.5,0.5,-0.5,-0.5],[-2,-2,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget pOppakkenSmoring3_20:=[[95,8.75,-150.4],[0.5,0.5,-0.5,-0.5],[-1,-1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget pOppakkenSmoring4_10:=[[45,8.75,-210.4],[0.5,0.5,-0.5,-0.5],[-2,-2,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget pOppakkenSmoring4_20:=[[95,8.75,-210.4],[0.5,0.5,-0.5,-0.5],[-1,-1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget pOppakkenSmoring5_20:=[[95,8.75,-270.4],[0.5,0.5,-0.5,-0.5],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget pOppakkenSmoring5_10:=[[45,8.75,-270.4],[0.5,0.5,-0.5,-0.5],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget pPlaatsen_10:=[[17.5,17.5,5],[0,0,1,0],[-1,0,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget pPlaatsen_20:=[[17.5,17.5,290],[0,-0.707106781,0.707106781,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget pPlaatsenSmoring10:=[[17.500002738,17.499999768,28.999977289],[-0.000000004,0.91420252,0.405257638,0.000000012],[-1,0,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget pPlaatsenSmoring20:=[[17.499997701,17.500002439,33.319985801],[-0.000000013,0.981307099,-0.192448378,-0.000000021],[-1,-1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget pPlaatsenKleineMoer_20:=[[17.5,17.5,290],[0,-0.707106781,0.707106781,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget pOppakkenKleineMoer2_10:=[[115.05,268.809153632,12.497268931],[1,-0.000000009,0,0],[0,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget pOppakkenKleineMoer2_20:=[[115.05,268.809150032,-187.502731069],[1,-0.000000009,0,0],[0,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+   
+    PROC MainProtocol()
+        OppakkenKleineMoer2;
+        PlaatsenAssemblageKleineMoer2;
+        OppakkenSmoring;
+        PlaatsenAssemblageSmoring;
+        
+    ENDPROC
+    
+    PROC OppakkenSnijring()
+        MoveJDO pOppakkenSnijring_20,V500,fine,My_Mechanism_1\WObj:=OpslagSnijring,DO2,0;
+        SetDO DO1,1;
+        MoveL pOppakkenSnijring_10,V500,fine,My_Mechanism_1\WObj:=OpslagSnijring;
+        SetDO DO1,0;
+        SetDO DO2,1;
+        Waittime 0.5;
+        MoveL pOppakkenSnijring_20,V500,fine,My_Mechanism_1\WObj:=OpslagSnijring;
+    ENDPROC
+    
+    PROC OppakkenKleineMoer()
+        MoveJDO pOppakkenKleineMoer_20,V500,fine,My_Mechanism_1\WObj:=OpslagKleineMoer,DO2,0;
+        SetDO DO1,1;
+        MoveL pOppakkenKleineMoer_10,V500,fine,My_Mechanism_1\WObj:=OpslagKleineMoer;
+        SetDO DO1,0;
+        SetDO DO2,1;
+        Waittime 0.5;
+        MoveL pOppakkenKleineMoer_20,V500,fine,My_Mechanism_1\WObj:=OpslagKleineMoer;
+    ENDPROC
+    
+    PROC OppakkenKleineMoer2()
+        MoveJDO pOppakkenKleineMoer2_20,V500,fine,My_Mechanism_1\WObj:=OpslagKleineMoer,DO2,0;
+        SetDO DO1,1;
+        MoveL pOppakkenKleineMoer2_10,V500,fine,My_Mechanism_1\WObj:=OpslagKleineMoer;
+        SetDO DO1,0;
+        SetDO DO2,1;
+        Waittime 0.5;
+        MoveL pOppakkenKleineMoer2_20,V500,fine,My_Mechanism_1\WObj:=OpslagKleineMoer;
+    ENDPROC
+    
+    PROC OppakkenGroteMoer()
+        MoveJDO pOppakkenGroteMoer_20,V500,fine,My_Mechanism_1\WObj:=OpslagGroteMoer,DO2,0;
+        SetDO DO1,1;
+        MoveL pOppakkenGroteMoer_10,V500,fine,My_Mechanism_1\WObj:=OpslagGroteMoer;
+        SetDO DO1,0;
+        SetDO DO2,1;
+        Waittime 0.5;
+        MoveL pOppakkenGroteMoer_20,V500,fine,My_Mechanism_1\WObj:=OpslagGroteMoer;
+    ENDPROC
+    
+    PROC PlaatsenAssemblageKleineMoer2()
+        Movej pPlaatsenKleineMoer_20,V200,fine,My_Mechanism_1\WObj:=AssemblageKlep;
+        MoveL pPlaatsen_10,V200,fine,My_Mechanism_1\WObj:=AssemblageKlep;
+        WaitTime 0.5;
+        SetDO DO2,0;
+        SetDO DO1,1;
+        WaitTime 0.5;
+        MoveL pPlaatsenKleineMoer_20,V200,fine,My_Mechanism_1\WObj:=AssemblageKlep;
+    ENDPROC
+    
+    PROC PlaatsenAssemblageSmoring()
+        MoveJ pPlaatsenKleineMoer_20,V200,fine,My_Mechanism_1\WObj:=AssemblageKlep;
+        MoveL pPlaatsenSmoring20,V200,fine,My_Mechanism_1\WObj:=AssemblageKlep;
+        MoveJ pPlaatsenSmoring10,V200,fine,My_Mechanism_1\WObj:=AssemblageKlep;
+        SetDO DO2,0;
+        SetDO DO1,1;
+        WaitTime 0.5;
+        MoveL pPlaatsenKleineMoer_20,V200,fine,My_Mechanism_1\WObj:=AssemblageKlep;
+        WaitTime 0.5;
+    ENDPROC
+    
+    PROC OppakkenSmoring()
+        MoveJ pAankomen_10,V200,fine,My_Mechanism_1\WObj:=OpslagSmoring;
+        MoveLDO pOppakkenSmoring1_20,V200,fine,My_Mechanism_1\WObj:=OpslagSmoring,DO2,0;
+        SetDO DO1,1;
+        MoveL pOppakkenSmoring1_10,V200,fine,My_Mechanism_1\WObj:=OpslagSmoring;
+        SetDO DO1,0;
+        SetDO DO2,1;
+        WaitTime 0.5;
+        MoveL pOppakkenSmoring1_20,V200,fine,My_Mechanism_1\WObj:=OpslagSmoring;
+        MoveJ pAankomen_10,V200,fine,My_Mechanism_1\WObj:=OpslagSmoring;
+    ENDPROC
+    
+    PROC Path_10()
+        MoveL pOppakkenSnijring_20,v1000,z100,My_Mechanism_1\WObj:=OpslagSnijring;
+        MoveL pOppakkenSnijring_10,v1000,z100,My_Mechanism_1\WObj:=OpslagSnijring;
+        MoveL pOppakkenGroteMoer_10,v1000,z100,My_Mechanism_1\WObj:=OpslagGroteMoer;
+        MoveL pOppakkenGroteMoer_20,v1000,z100,My_Mechanism_1\WObj:=OpslagGroteMoer;
+        MoveL pOppakkenKleineMoer_10,v1000,z100,My_Mechanism_1\WObj:=OpslagKleineMoer;
+        MoveL pOppakkenKleineMoer_20,v1000,z100,My_Mechanism_1\WObj:=OpslagKleineMoer;
+        MoveL pAankomen_10,v1000,z100,My_Mechanism_1\WObj:=OpslagSmoring;
+        MoveL pOppakkenSmoring1_10,v1000,z100,My_Mechanism_1\WObj:=OpslagSmoring;
+        MoveL pOppakkenSmoring1_20,v1000,z100,My_Mechanism_1\WObj:=OpslagSmoring;
+        MoveL pOppakkenSmoring2_10,v1000,z100,My_Mechanism_1\WObj:=OpslagSmoring;
+        MoveL pOppakkenSmoring2_20,v1000,z100,My_Mechanism_1\WObj:=OpslagSmoring;
+        MoveL pOppakkenSmoring3_10,v1000,z100,My_Mechanism_1\WObj:=OpslagSmoring;
+        MoveL pOppakkenSmoring3_20,v1000,z100,My_Mechanism_1\WObj:=OpslagSmoring;
+        MoveL pOppakkenSmoring4_10,v1000,z100,My_Mechanism_1\WObj:=OpslagSmoring;
+        MoveL pOppakkenSmoring4_20,v1000,z100,My_Mechanism_1\WObj:=OpslagSmoring;
+        MoveL pOppakkenSmoring5_20,v1000,z100,My_Mechanism_1\WObj:=OpslagSmoring;
+        MoveL pOppakkenSmoring5_10,v1000,z100,My_Mechanism_1\WObj:=OpslagSmoring;
+        MoveL pPlaatsen_10,v1000,z100,My_Mechanism_1\WObj:=AssemblageKlep;
+        MoveL pPlaatsenKleineMoer_20,v1000,z100,My_Mechanism_1\WObj:=AssemblageKlep;
+        MoveL pPlaatsenSmoring10,v1000,z100,GripperV2_1\WObj:=AssemblageKlep;
+        MoveL pPlaatsenSmoring20,v1000,z100,GripperV2_1\WObj:=AssemblageKlep;
+        MoveL pOppakkenKleineMoer2_10,v1000,z100,GripperV2_1\WObj:=OpslagKleineMoer2;
+        MoveL pOppakkenKleineMoer2_20,v1000,z100,GripperV2_1\WObj:=OpslagKleineMoer2;
+    ENDPROC
+    PROC PlaatsenSmoring()
+
+    ENDPROC
+    PROC PlaatsenAssemblageKleineMoer()
+        Movej pPlaatsenKleineMoer_20,V200,fine,My_Mechanism_1\WObj:=AssemblageKlep;
+        MoveL pPlaatsen_10,V200,fine,My_Mechanism_1\WObj:=AssemblageKlep;
+        WaitTime 0.5;
+        SetDO DO2,0;
+        SetDO DO1,1;
+        WaitTime 0.5;
+        MoveL pPlaatsenKleineMoer_20,V200,fine,My_Mechanism_1\WObj:=AssemblageKlep;
+    ENDPROC
+ENDMODULE

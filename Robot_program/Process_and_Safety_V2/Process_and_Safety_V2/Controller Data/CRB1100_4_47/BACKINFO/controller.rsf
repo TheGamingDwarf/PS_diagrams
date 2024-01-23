@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProductSettings version="2.0">
+  <Products>
+    <Product name="RobotControl" version="7.10.0+329" id="abb.robotics.robotcontrol">
+      <Features>
+        <Feature id="abb.robotics.robotcontrol.base" robot="1" />
+        <Feature id="abb.robotics.robotcontrol.languages.english" robot="1" />
+        <Feature id="abb.robotics.robotcontrol.options.flexpendant.limited" robot="1" />
+        <Feature id="abb.robotics.robotcontrol.options.flexpendant.essential" robot="1" />
+        <Feature id="abb.robotics.robotcontrol.options.flexpendant.program" robot="1" />
+        <Feature id="abb.robotics.robotcontrol.options.profinet.slave" robot="1" />
+        <Feature id="abb.robotics.robotcontrol.options.safemove.collaborative" robot="1" />
+        <Feature id="abb.robotics.robotcontrol.options.devicenet.mssingle" displayName="3029-1 DeviceNet Single Channel" robot="1" />
+        <Feature id="abb.robotics.robotcontrol.drivesystems.drive.dc430a6.du430a6.dm430a2" displayName="C30/C90XT-A1" robot="1" />
+        <Feature id="abb.robotics.robotcontrol.options.calaxis" displayName="Axis Calibration" robot="1" />
+        <Feature id="abb.robotics.robotcontrol.options.profinet.profisafe" robot="1" />
+      </Features>
+    </Product>
+    <Product name="RobotOS" version="9.0.0+159" id="abb.robotics.robotos">
+      <Features>
+        <Feature id="abb.robotics.robotos" robot="1" />
+      </Features>
+    </Product>
+    <Product name="Robots" version="1.10.0+107" id="abb.robotics.robots">
+      <Features>
+        <Feature id="abb.robotics.robots.robots.crb1100.4-0_47" displayName="CRB 1100-4/0.47" robot="1" />
+      </Features>
+    </Product>
+    <Product name="Wizard" version="1.5.1" id="abb.cn.robotics.wizard">
+      <Features>
+        <Feature id="abb.cn.robotics.wizard.wizard" robot="1" />
+      </Features>
+    </Product>
+  </Products>
+</ProductSettings>

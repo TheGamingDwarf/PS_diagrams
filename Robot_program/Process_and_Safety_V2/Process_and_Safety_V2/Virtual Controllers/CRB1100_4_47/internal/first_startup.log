@@ -1,0 +1,57 @@
+C:\a\2\s\DpUpdates\DpUpdates.cpp, 53	2024-01-23 12:21:18: Starting new log ***********************. 
+C:\a\2\s\DpUpdates\DpUpdates.cpp, 54	[INFO] Finalize the installation. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1002	Recreate 'C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/temp/INSTALL'
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1016	[INFO] InstallSystem starts. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1020	[INFO] Create system structures. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1296	[INFO] Building system structure in 'C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal'.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1312	[INFO] Building folders under 'C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47'.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1337	GetProdsAndFeaturesFromCtrlrsfFile(), file path = 'C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/controller.rsf'. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1383	GetProdsAndFeaturesFromCtrlrsfFile(), got 4 products. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1448	GetProdsAndFeaturesFromCtrlrsfFile(), got 11 features for product 'RobotControl'. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1448	GetProdsAndFeaturesFromCtrlrsfFile(), got 1 features for product 'RobotOS'. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1448	GetProdsAndFeaturesFromCtrlrsfFile(), got 1 features for product 'Robots'. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1448	GetProdsAndFeaturesFromCtrlrsfFile(), got 1 features for product 'Wizard'. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1047	[INFO] Get information of product 'RobotControl'.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1056	[INFO] Get all features and feature data of product 'RobotControl'.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 318	[INFO] Number of features for product 'RobotControl' is 13.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 321	[INFO] Get information for each feature.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1047	[INFO] Get information of product 'RobotOS'.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1056	[INFO] Get all features and feature data of product 'RobotOS'.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 318	[INFO] Number of features for product 'RobotOS' is 1.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 321	[INFO] Get information for each feature.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 367	[INFO] No KeyValue found for feature 'abb.robotics.robotos' in file C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotOS_9.0.0/abb.robotics.robotos.rmf.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1047	[INFO] Get information of product 'Robots'.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1056	[INFO] Get all features and feature data of product 'Robots'.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 318	[INFO] Number of features for product 'Robots' is 2.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 321	[INFO] Get information for each feature.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1047	[INFO] Get information of product 'Wizard'.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1056	[INFO] Get all features and feature data of product 'Wizard'.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 296	[INFO] No default selected feature found in file 'C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Wizard_1.5.1/abb.cn.robotics.wizard_1.5.1.rmf'.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 318	[INFO] Number of features for product 'Wizard' is 1.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 321	[INFO] Get information for each feature.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1649	[INFO] Product path 'C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0'.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1674	[INFO] Product path 'C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotOS_9.0.0'.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1674	[INFO] Product path 'C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Robots_1.10.0'.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1674	[INFO] Product path 'C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Wizard_1.5.1'.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1697	[WARNING] Failed to get serial number or empty serial number. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1755	[INFO] Generating key.id, writing header.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1971	[INFO] Generate file 'C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/system.xml'.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 2000	[WARNING] Unable to get serial number or empty serial number. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1120	All actions done, status = 0. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 2250	[INFO] Installation is complete. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 842	[INFO] Update prodinfo.xml. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 871	[INFO] Need to update prodinfo.xml. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 912	[INFO] File C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/prodinfo.xml has been updated. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 943	[INFO] Failed to get RWI version. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 968	[INFO] File C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/prodinfo.xml has been created, status = 0. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1337	GetProdsAndFeaturesFromCtrlrsfFile(), file path = 'C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/controller.rsf'. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1383	GetProdsAndFeaturesFromCtrlrsfFile(), got 4 products. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1448	GetProdsAndFeaturesFromCtrlrsfFile(), got 11 features for product 'RobotControl'. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1448	GetProdsAndFeaturesFromCtrlrsfFile(), got 1 features for product 'RobotOS'. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1448	GetProdsAndFeaturesFromCtrlrsfFile(), got 1 features for product 'Robots'. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1448	GetProdsAndFeaturesFromCtrlrsfFile(), got 1 features for product 'Wizard'. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 1857	[INFO] ResetAddInData status =0.
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 842	[INFO] Update prodinfo.xml. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 968	[INFO] File C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/prodinfo.xml has been created, status = 0. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 842	[INFO] Update prodinfo.xml. 
+C:\a\2\s\DpUpdates\DpUpdates_i.cpp, 968	[INFO] File C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/prodinfo.xml has been created, status = 0. 

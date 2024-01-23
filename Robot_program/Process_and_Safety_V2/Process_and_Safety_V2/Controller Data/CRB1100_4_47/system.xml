@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SystemProperties>
+  <SystemName>CRB1100_4_47</SystemName>
+  <SerialNo>VIRTUAL_CONTROLLER</SerialNo>
+  <UsedMedia>
+    <Media path="C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0" name="RobotControl" version="7.10.0+329" versionName="7.10.0"/>
+    <Media path="C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotOS_9.0.0" name="RobotOS" version="9.0.0+159" versionName="9.0.0"/>
+    <Media path="C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Robots_1.10.0" name="Robots" version="1.10.0+107" versionName="1.10.0"/>
+    <Media path="C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Wizard_1.5.1" name="Wizard" version="1.5.1" versionName="1.5.1"/>
+  </UsedMedia>
+  <ControlModule>
+    <Option descr="RobotControl Base"/>
+    <Option descr="English"/>
+    <Option descr="3120-1 FlexPendant Limited App Package"/>
+    <Option descr="3120-2 FlexPendant Essential App Package"/>
+    <Option descr="3151-1 FlexPendant Program Package"/>
+    <Option descr="3020-2 PROFINET Device"/>
+    <Option descr="3043-3 SafeMove Collaborative"/>
+    <Option descr="3029-1 DeviceNet Single Channel"/>
+    <Option descr="3023-2 PROFIsafe Device"/>
+  </ControlModule>
+  <DriveModule>
+    <Name>Robot1</Name>
+    <Option descr="C30/C90XT-A1"/>
+    <Option descr="Axis Calibration"/>
+  </DriveModule>
+  <AdditionalOption>
+    <Name>Robots</Name>
+    <Option descr="CRB 1100-4/0.47"/>
+  </AdditionalOption>
+  <AdditionalOption>
+    <Name>Wizard</Name>
+    <Option descr="Wizard"/>
+  </AdditionalOption>
+</SystemProperties>
