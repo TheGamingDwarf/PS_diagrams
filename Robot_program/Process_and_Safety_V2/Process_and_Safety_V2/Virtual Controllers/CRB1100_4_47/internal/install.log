@@ -1,0 +1,2623 @@
+02:52:50:721000 Status 0 from startup_log
+Begin system installation
+02:52:50:721000 Status 0 from echo
+02:52:50:721000 Status 0 from basedefs
+02:52:50:721000 Status 0 from invoke2 s17_initialize
+02:52:50:721000 Status 0 from if_feature_present abb.robotics.controller.axiscomputer.none
+Goto to label: END
+02:52:50:721000 Status 0 from goto END
+C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/TEMP has been mounted.
+02:52:52:636000 Status 0 from baseinit
+02:52:52:636000 Status 0 from uprobe_init
+02:52:52:636000 Status 0 from debug_service_base_init
+02:52:52:636000 Status 0 from invoke S33_01_create
+02:52:52:636000 Status 0 from S33_01_init
+02:52:52:636000 Status 0 from if_feature_present abb.robotics.controller.axiscomputer.none
+02:52:54:526000 Status 0 from invoke2 AxcServoControl_InitModule
+Goto to label: END
+02:52:54:526000 Status 0 from goto END
+02:52:54:526000 Status 0 from invoke S98_01_create
+02:52:54:526000 Status 0 from S98_01_setup
+02:52:54:526000 Status 0 from S98_01_init
+Illegal call: sysdmp_init must be called first!02:52:54:526000 Status -1 from sysdmp_init
+ ... will continue!
+Goto to label: VC_SKIP_SYSDMPTASK
+02:52:54:526000 Status 0 from ifvc VC_SKIP_SYSDMPTASK
+02:52:54:526000 Status 0 from debug_service_init
+Illegal call: sysdmp_init must be called first!02:52:54:526000 Status -1 from sysdmp_add
+ ... will continue!
+02:52:54:526000 Status 0 from setstr $ANSWER
+02:52:54:526000 Status 0 from selectmedia $ANSWER
+02:52:56:524000 Status 0 from task 
+02:52:56:530000 Status 0 from synchronize task
+02:52:56:530000 Status 0 from go task
+02:52:58:460000 Status 0 from task 
+02:53:00:413000 Status 0 from task 
+02:53:02:267000 Status 0 from task 
+
+24-01-23  12:21:18 MC0: type = STATE_CHANGE id = Operational code = 46 (10046)
+
+02:53:02:267000 Status 0 from basenew
+Base services started
+02:53:02:267000 Status 0 from echo
+02:53:02:267000 Status 0 from S98_01_new
+02:53:02:267000 Status 0 from setenv
+02:53:02:267000 Status 0 from setenv
+Goto to label: VC_PYTHON
+02:53:02:267000 Status 0 from ifvc VC_PYTHON
+02:53:02:267000 Status 0 from setenv
+02:53:02:267000 Status 0 from setenv
+02:53:02:267000 Status 0 from init eio
+02:53:02:267000 Status 0 from init sio
+ Size of MOC_IO_BS_BUFFER 18844
+02:53:02:267000 Status 0 from init motion
+02:53:02:267000 Status 0 from init rol
+02:53:02:296000 Status 0 from init cab
+02:53:02:296000 Status 0 from init bar
+02:53:02:296000 Status 0 from init pgmrun
+02:53:02:296000 Status 0 from init rapid
+02:53:02:296000 Status 0 from init puscfg
+02:53:02:296000 Status 0 from setEioValidationLevel
+02:53:04:159000 Status 0 from task 
+02:53:06:48000 Status 0 from task 
+02:53:06:48000 Status 0 from setvar
+Installing configuration system
+02:53:06:48000 Status 0 from echo
+02:53:06:867000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/sys.cfg
+02:53:07:960000 Status 0 from invoke2 cfg_create_type_xml
+02:53:08:782000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/eio_internal.cfg
+02:53:09:542000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/sys_eiosig.cfg
+Goto to label: NO_PIB_SAF
+02:53:09:542000 Status 0 from getkey pib
+02:53:10:379000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/pgmbtn.cfg
+02:53:11:217000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlmset.cfg
+02:53:12:52000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlmove.cfg
+02:53:12:737000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlmsys.cfg
+02:53:13:571000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlexe.cfg
+02:53:14:403000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlcom.cfg
+02:53:15:248000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlsocket.cfg
+02:53:16:52000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlio.cfg
+02:53:16:863000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rltrap.cfg
+02:53:17:671000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlmmec.cfg
+02:53:18:478000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlsys.cfg
+02:53:19:210000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlload.cfg
+02:53:20:31000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlmsrc.cfg
+02:53:20:924000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rltrig.cfg
+02:53:21:597000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlpid.cfg
+02:53:22:779000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlsmod.cfg
+02:53:23:618000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlfsta.cfg
+02:53:24:585000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlraps.cfg
+02:53:25:303000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlmath.cfg
+02:53:26:4000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlmexe.cfg
+02:53:26:718000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlsset.cfg
+02:53:27:393000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlstr.cfg
+02:53:28:62000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlcure.cfg
+02:53:28:859000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlwz.cfg
+02:53:29:508000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rltool.cfg
+02:53:30:704000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlsym.cfg
+02:53:31:547000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlbit.cfg
+02:53:32:375000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlcal.cfg
+02:53:33:84000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlcyclic.cfg
+02:53:33:84000 Status 0 from setvar
+Goto to label: NO_PAINT_CNV
+02:53:33:84000 Status 0 from getkey paintMedia
+02:53:33:864000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlcnv.cfg
+Goto to label: NEXT_STEP
+02:53:33:864000 Status 0 from goto NEXT_STEP
+02:53:34:677000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlind.cfg
+02:53:35:391000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlcorr.cfg
+02:53:36:92000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlopr.cfg
+02:53:36:983000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rldata.cfg
+02:53:37:810000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlmq.cfg
+02:53:38:643000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rltrigios.cfg
+02:53:39:420000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/mockit1.cfg
+02:53:40:309000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/calwrist.cfg
+02:53:41:283000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/usrmmc.cfg
+02:53:41:913000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/usrmmc_mc.cfg
+02:53:42:595000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/bat_shutdownmmc.cfg
+02:53:43:364000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/rlbasic.cfg
+02:53:44:38000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/calwrist_sys.cfg
+02:53:44:705000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/bat_shutdownsys.cfg
+02:53:44:705000 Status 0 from is_option_present SAFEMOVEPRO
+Goto to label: SAFE_MOVE_OPTION_PRESENT
+02:53:44:705000 Status 0 from goto SAFE_MOVE_OPTION_PRESENT
+02:53:44:705000 Status 0 from if_feature_present abb.robotics.robots.robots.irb14050.0_5-0_5
+02:53:45:314000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/CBC_SYS.cfg
+02:53:46:109000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/CBC_SYS_mmc.cfg
+Goto to label: NEXT_STEP
+02:53:46:109000 Status 0 from goto NEXT_STEP
+02:53:46:743000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/linked_m_sup_base.cfg
+Goto to label: NO_FCTRQSENS
+02:53:46:743000 Status 0 from is_option_present FCTRQSENS
+02:53:47:587000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/usrsys.cfg
+02:53:48:653000 Status 0 from invoke2 cfg_create_type_xml
+02:53:49:330000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/sio_net_nondeletable.cfg
+02:53:49:996000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/sio_net_internal.cfg
+02:53:50:635000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/sio_net.cfg
+02:53:51:537000 Status 0 from invoke2 cfg_create_type_xml
+02:53:52:182000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/sys_fan_control.cfg
+02:53:52:188000 Status 0 from synchronize task
+02:53:52:188000 Status 0 from go task
+Installing system files
+02:53:52:188000 Status 0 from echo
+Goto to label: NEXT_STEP
+02:53:52:188000 Status 0 from direxist C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/OPTIONS/SC
+Goto to label: CLEANUP_0
+02:53:52:188000 Status 0 from fileexist C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/opt_l0.cmd
+02:53:52:188000 Status 0 from delete C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/opt_l0.cmd
+Goto to label: CLEANUP_1
+02:53:52:188000 Status 0 from fileexist C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/option.cmd
+02:53:52:188000 Status 0 from delete C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/option.cmd
+02:53:52:188000 Status 0 from fileexist C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/opt_l1.cmd
+Goto to label: NEXT_STEP
+02:53:52:188000 Status 0 from goto NEXT_STEP
+02:53:52:188000 Status 0 from fileexist C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/opt_l2.cmd
+Goto to label: NEXT_STEP
+02:53:52:188000 Status 0 from goto NEXT_STEP
+02:53:52:188000 Status 0 from fileexist C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/opt_l3.cmd
+Goto to label: NEXT_STEP
+02:53:52:188000 Status 0 from goto NEXT_STEP
+02:53:52:188000 Status 0 from fileexist C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/upgrade_opt.cmd
+Goto to label: NEXT_STEP
+02:53:52:188000 Status 0 from goto NEXT_STEP
+02:53:52:188000 Status 0 from register 
+02:53:52:188000 Status 0 from register 
+02:53:53:28000 Status 0 from register 
+02:53:53:634000 Status 0 from register 
+02:53:54:303000 Status 0 from register 
+02:53:54:947000 Status 0 from register 
+02:53:54:947000 Status 0 from register 
+02:53:55:727000 Status 0 from register 
+02:53:55:727000 Status 0 from register 
+02:53:55:727000 Status 0 from register 
+02:53:55:727000 Status 0 from fileexist C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/HOME/rapid_edit_rules.xml
+Goto to label: NEXT_STEP
+02:53:55:727000 Status 0 from goto NEXT_STEP
+02:53:55:727000 Status 0 from setstr $ANSWER
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/rules/install.cmd
+02:53:56:710000 Status 0 from register 
+02:53:56:710000 Status 0 from setstr $CFGRULES
+02:53:57:514000 Status 0 from register 
+02:53:58:86000 Status 0 from register 
+02:53:58:708000 Status 0 from register 
+02:53:59:308000 Status 0 from register 
+02:53:59:923000 Status 0 from register 
+02:54:00:580000 Status 0 from register 
+02:54:01:241000 Status 0 from register 
+02:54:01:890000 Status 0 from register 
+02:54:02:565000 Status 0 from register 
+02:54:03:380000 Status 0 from register 
+Goto to label: NO_RC
+02:54:03:380000 Status 0 from ifvc NO_RC
+Goto to label: ST
+02:54:03:380000 Status 0 from getkey MT
+02:54:04:211000 Status 0 from register 
+Goto to label: END_UDPUC
+02:54:04:211000 Status 0 from is_option_present UDPUC
+Goto to label: END_IV
+02:54:04:211000 Status 0 from is_option_present IV
+02:54:04:211000 Status 0 from register 
+02:54:04:970000 Status 0 from register 
+02:54:04:970000 Status 0 from register 
+02:54:04:970000 Status 0 from setstr $ELOGRULES
+02:54:06:920000 Status 0 from register 
+02:54:08:555000 Status 0 from register 
+02:54:10:243000 Status 0 from register 
+02:54:12:312000 Status 0 from register 
+02:54:14:51000 Status 0 from register 
+02:54:15:862000 Status 0 from register 
+02:54:17:597000 Status 0 from register 
+02:54:19:565000 Status 0 from register 
+02:54:21:498000 Status 0 from register 
+02:54:23:239000 Status 0 from register 
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/rules/install.cmd
+Goto to label: NEXT_STEP
+02:54:23:239000 Status 0 from selectmedia 
+02:54:23:239000 Status 0 from setstr $ANSWER
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/install.cmd
+02:54:24:278000 Status 0 from setvar
+02:54:24:278000 Status 0 from getkey LanguageCode
+Goto to label: SET_LANGUAGE
+02:54:24:278000 Status 0 from goto SET_LANGUAGE
+02:54:24:955000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/en.cfg
+02:54:24:955000 Status 0 from setenv
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instlang.cmd
+02:54:25:810000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:26:549000 Status 0 from setstr $TXTPATH
+Goto to label: INSTALL_FILE
+02:54:27:568000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../en/controller/rapid/roloptext.xml
+02:54:27:581000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../en/controller/rapid/roloptext.xml
+Goto to label: INSTALL_FILE
+02:54:28:460000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../en/controller/rapid/calwrist.xml
+02:54:28:460000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../en/controller/rapid/calwrist.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:28:460000 Status 0 from include INSTALL_FILE
+02:54:28:460000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:28:460000 Status 0 from setstr $TXTPATH
+Goto to label: INSTALL_FILE
+02:54:29:424000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../cs/controller/rapid/roloptext.xml
+02:54:29:424000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../cs/controller/rapid/roloptext.xml
+Goto to label: INSTALL_FILE
+02:54:30:254000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../cs/controller/rapid/calwrist.xml
+02:54:30:254000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../cs/controller/rapid/calwrist.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:30:254000 Status 0 from include INSTALL_FILE
+02:54:30:254000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:30:254000 Status 0 from setstr $TXTPATH
+Goto to label: INSTALL_FILE
+02:54:31:248000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../da/controller/rapid/roloptext.xml
+02:54:31:248000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../da/controller/rapid/roloptext.xml
+Goto to label: INSTALL_FILE
+02:54:32:117000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../da/controller/rapid/calwrist.xml
+02:54:32:117000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../da/controller/rapid/calwrist.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:32:117000 Status 0 from include INSTALL_FILE
+02:54:32:117000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:32:117000 Status 0 from setstr $TXTPATH
+Goto to label: INSTALL_FILE
+02:54:33:184000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../de/controller/rapid/roloptext.xml
+02:54:33:184000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../de/controller/rapid/roloptext.xml
+Goto to label: INSTALL_FILE
+02:54:34:83000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../de/controller/rapid/calwrist.xml
+02:54:34:83000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../de/controller/rapid/calwrist.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:34:83000 Status 0 from include INSTALL_FILE
+02:54:34:83000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:34:83000 Status 0 from setstr $TXTPATH
+Goto to label: INSTALL_FILE
+02:54:35:110000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../es/controller/rapid/roloptext.xml
+02:54:35:110000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../es/controller/rapid/roloptext.xml
+Goto to label: INSTALL_FILE
+02:54:35:985000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../es/controller/rapid/calwrist.xml
+02:54:35:985000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../es/controller/rapid/calwrist.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:35:985000 Status 0 from include INSTALL_FILE
+02:54:35:985000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:35:985000 Status 0 from setstr $TXTPATH
+Goto to label: INSTALL_FILE
+02:54:37:39000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../fi/controller/rapid/roloptext.xml
+02:54:37:39000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../fi/controller/rapid/roloptext.xml
+Goto to label: INSTALL_FILE
+02:54:37:909000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../fi/controller/rapid/calwrist.xml
+02:54:37:909000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../fi/controller/rapid/calwrist.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:37:909000 Status 0 from include INSTALL_FILE
+02:54:37:909000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:37:909000 Status 0 from setstr $TXTPATH
+Goto to label: INSTALL_FILE
+02:54:38:934000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../fr/controller/rapid/roloptext.xml
+02:54:38:934000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../fr/controller/rapid/roloptext.xml
+Goto to label: INSTALL_FILE
+02:54:39:833000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../fr/controller/rapid/calwrist.xml
+02:54:39:833000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../fr/controller/rapid/calwrist.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:39:833000 Status 0 from include INSTALL_FILE
+02:54:39:833000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:39:833000 Status 0 from setstr $TXTPATH
+Goto to label: INSTALL_FILE
+02:54:40:856000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../hu/controller/rapid/roloptext.xml
+02:54:40:856000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../hu/controller/rapid/roloptext.xml
+Goto to label: INSTALL_FILE
+02:54:41:748000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../hu/controller/rapid/calwrist.xml
+02:54:41:748000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../hu/controller/rapid/calwrist.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:41:748000 Status 0 from include INSTALL_FILE
+02:54:41:748000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:41:748000 Status 0 from setstr $TXTPATH
+Goto to label: INSTALL_FILE
+02:54:42:769000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../it/controller/rapid/roloptext.xml
+02:54:42:769000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../it/controller/rapid/roloptext.xml
+Goto to label: INSTALL_FILE
+02:54:43:663000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../it/controller/rapid/calwrist.xml
+02:54:43:663000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../it/controller/rapid/calwrist.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:43:663000 Status 0 from include INSTALL_FILE
+02:54:43:663000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:43:663000 Status 0 from setstr $TXTPATH
+Goto to label: INSTALL_FILE
+02:54:44:706000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../ja/controller/rapid/roloptext.xml
+02:54:44:706000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../ja/controller/rapid/roloptext.xml
+Goto to label: INSTALL_FILE
+02:54:45:618000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../ja/controller/rapid/calwrist.xml
+02:54:45:618000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../ja/controller/rapid/calwrist.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:45:618000 Status 0 from include INSTALL_FILE
+02:54:45:618000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:45:618000 Status 0 from setstr $TXTPATH
+Goto to label: INSTALL_FILE
+02:54:46:650000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../ko/controller/rapid/roloptext.xml
+02:54:46:650000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../ko/controller/rapid/roloptext.xml
+Goto to label: INSTALL_FILE
+02:54:47:549000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../ko/controller/rapid/calwrist.xml
+02:54:47:549000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../ko/controller/rapid/calwrist.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:47:549000 Status 0 from include INSTALL_FILE
+02:54:47:549000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:47:549000 Status 0 from setstr $TXTPATH
+Goto to label: INSTALL_FILE
+02:54:48:667000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../nl/controller/rapid/roloptext.xml
+02:54:48:667000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../nl/controller/rapid/roloptext.xml
+Goto to label: INSTALL_FILE
+02:54:49:681000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../nl/controller/rapid/calwrist.xml
+02:54:49:681000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../nl/controller/rapid/calwrist.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:49:681000 Status 0 from include INSTALL_FILE
+02:54:49:681000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:49:681000 Status 0 from setstr $TXTPATH
+Goto to label: INSTALL_FILE
+02:54:50:873000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../pl/controller/rapid/roloptext.xml
+02:54:50:873000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../pl/controller/rapid/roloptext.xml
+Goto to label: INSTALL_FILE
+02:54:51:848000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../pl/controller/rapid/calwrist.xml
+02:54:51:848000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../pl/controller/rapid/calwrist.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:51:848000 Status 0 from include INSTALL_FILE
+02:54:51:848000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:51:848000 Status 0 from setstr $TXTPATH
+Goto to label: INSTALL_FILE
+02:54:52:914000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../pt/controller/rapid/roloptext.xml
+02:54:52:914000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../pt/controller/rapid/roloptext.xml
+Goto to label: INSTALL_FILE
+02:54:53:857000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../pt/controller/rapid/calwrist.xml
+02:54:53:857000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../pt/controller/rapid/calwrist.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:53:857000 Status 0 from include INSTALL_FILE
+02:54:53:857000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:53:857000 Status 0 from setstr $TXTPATH
+Goto to label: INSTALL_FILE
+02:54:54:954000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../ro/controller/rapid/roloptext.xml
+02:54:54:954000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../ro/controller/rapid/roloptext.xml
+Goto to label: INSTALL_FILE
+02:54:55:939000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../ro/controller/rapid/calwrist.xml
+02:54:55:939000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../ro/controller/rapid/calwrist.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:55:939000 Status 0 from include INSTALL_FILE
+02:54:55:939000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:55:939000 Status 0 from setstr $TXTPATH
+Goto to label: INSTALL_FILE
+02:54:57:39000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../ru/controller/rapid/roloptext.xml
+02:54:57:39000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../ru/controller/rapid/roloptext.xml
+Goto to label: INSTALL_FILE
+02:54:57:965000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../ru/controller/rapid/calwrist.xml
+02:54:57:965000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../ru/controller/rapid/calwrist.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:57:965000 Status 0 from include INSTALL_FILE
+02:54:57:965000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:57:965000 Status 0 from setstr $TXTPATH
+Goto to label: INSTALL_FILE
+02:54:58:952000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../sl/controller/rapid/roloptext.xml
+02:54:58:952000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../sl/controller/rapid/roloptext.xml
+Goto to label: INSTALL_FILE
+02:54:59:767000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../sl/controller/rapid/calwrist.xml
+02:54:59:767000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../sl/controller/rapid/calwrist.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:59:767000 Status 0 from include INSTALL_FILE
+02:54:59:767000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:54:59:767000 Status 0 from setstr $TXTPATH
+Goto to label: INSTALL_FILE
+02:55:00:780000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../sv/controller/rapid/roloptext.xml
+02:55:00:780000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../sv/controller/rapid/roloptext.xml
+Goto to label: INSTALL_FILE
+02:55:01:681000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../sv/controller/rapid/calwrist.xml
+02:55:01:681000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../sv/controller/rapid/calwrist.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:55:01:681000 Status 0 from include INSTALL_FILE
+02:55:01:681000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:55:01:681000 Status 0 from setstr $TXTPATH
+Goto to label: INSTALL_FILE
+02:55:02:759000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../tr/controller/rapid/roloptext.xml
+02:55:02:759000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../tr/controller/rapid/roloptext.xml
+Goto to label: INSTALL_FILE
+02:55:03:653000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../tr/controller/rapid/calwrist.xml
+02:55:03:653000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../tr/controller/rapid/calwrist.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:55:03:653000 Status 0 from include INSTALL_FILE
+02:55:03:653000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:55:03:653000 Status 0 from setstr $TXTPATH
+Goto to label: INSTALL_FILE
+02:55:04:610000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../zh/controller/rapid/roloptext.xml
+02:55:04:610000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../zh/controller/rapid/roloptext.xml
+Goto to label: INSTALL_FILE
+02:55:05:462000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../zh/controller/rapid/calwrist.xml
+02:55:05:462000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/../zh/controller/rapid/calwrist.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/language/install.cmd
+02:55:05:462000 Status 0 from include INSTALL_FILE
+02:55:05:462000 Status 0 from setstr $LANG
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instlang.cmd
+02:55:05:462000 Status 0 from include $LANG
+02:55:05:462000 Status 0 from register 
+02:55:06:292000 Status 0 from register 
+02:55:08:392000 Status 0 from register 
+02:55:10:556000 Status 0 from register 
+02:55:12:815000 Status 0 from register 
+02:55:14:997000 Status 0 from register 
+02:55:17:165000 Status 0 from register 
+02:55:19:370000 Status 0 from register 
+02:55:21:716000 Status 0 from register 
+02:55:24:49000 Status 0 from register 
+02:55:26:273000 Status 0 from register 
+02:55:28:652000 Status 0 from register 
+02:55:30:968000 Status 0 from register 
+02:55:33:269000 Status 0 from register 
+02:55:35:531000 Status 0 from register 
+02:55:37:871000 Status 0 from register 
+02:55:40:200000 Status 0 from register 
+02:55:42:667000 Status 0 from register 
+02:55:45:83000 Status 0 from register 
+02:55:47:491000 Status 0 from register 
+02:55:49:896000 Status 0 from register 
+02:55:52:249000 Status 0 from register 
+02:55:54:657000 Status 0 from register 
+02:55:57:106000 Status 0 from register 
+02:55:59:582000 Status 0 from register 
+02:56:01:551000 Status 0 from register 
+02:56:03:899000 Status 0 from register 
+02:56:05:656000 Status 0 from register 
+02:56:07:987000 Status 0 from register 
+02:56:10:365000 Status 0 from register 
+02:56:12:831000 Status 0 from register 
+02:56:15:220000 Status 0 from register 
+02:56:17:506000 Status 0 from register 
+02:56:19:904000 Status 0 from register 
+02:56:22:290000 Status 0 from register 
+02:56:24:661000 Status 0 from register 
+02:56:27:6000 Status 0 from register 
+02:56:29:160000 Status 0 from register 
+02:56:31:449000 Status 0 from register 
+02:56:33:866000 Status 0 from register 
+02:56:36:153000 Status 0 from register 
+02:56:38:362000 Status 0 from register 
+02:56:40:229000 Status 0 from register 
+02:56:42:358000 Status 0 from register 
+02:56:44:536000 Status 0 from register 
+02:56:45:324000 Status 0 from register 
+02:56:46:78000 Status 0 from register 
+02:56:46:78000 Status 0 from register 
+02:56:48:322000 Status 0 from register 
+02:56:48:322000 Status 0 from register 
+02:56:49:145000 Status 0 from register 
+02:56:49:788000 Status 0 from register 
+02:56:50:414000 Status 0 from register 
+02:56:51:127000 Status 0 from register 
+02:56:51:772000 Status 0 from register 
+02:56:52:428000 Status 0 from register 
+02:56:53:176000 Status 0 from register 
+02:56:53:946000 Status 0 from register 
+02:56:54:708000 Status 0 from register 
+02:56:55:539000 Status 0 from register 
+02:56:56:339000 Status 0 from register 
+Goto to label: ST
+02:56:56:339000 Status 0 from getkey MT
+02:56:57:167000 Status 0 from register 
+Goto to label: END_UDPUC
+02:56:57:167000 Status 0 from is_option_present UDPUC
+Goto to label: END_IV
+02:56:57:167000 Status 0 from is_option_present IV
+02:56:58:288000 Status 0 from register 
+Goto to label: NO_ERROR
+02:56:58:288000 Status 0 from goto NO_ERROR
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/language/install/install.cmd
+Goto to label: NEXT_STEP
+02:56:58:288000 Status 0 from selectmedia 
+02:56:58:288000 Status 0 from setstr $BOOTPATH_SAVED
+02:56:58:288000 Status 0 from setstr $BOOTPATH
+Goto to label: LOAD_CMD
+02:56:59:317000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/en_base_install.cmd
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/en_base_install.cmd
+Goto to label: INSTALL_FILE
+02:57:00:433000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/en_base_cfgtypes.xml
+02:57:00:433000 Status 0 from invoke2 cfg_create_type_xml
+02:57:00:433000 Status 0 from setvar
+Goto to label: STANDARD_SCANNER
+02:57:00:433000 Status 0 from getkey CIPSCANNER
+02:57:00:433000 Status 0 from setvar
+Goto to label: NEXT_STEP
+02:57:00:433000 Status 0 from getkey ENIPSCANNER
+02:57:00:433000 Status 0 from setvar
+Goto to label: NEXT_STEP
+02:57:00:433000 Status 0 from getkey ENIPADAPTER
+Goto to label: ENMS_NOT_FOUND
+02:57:00:433000 Status 0 from getkey ENIPSCANNER
+02:57:01:133000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/en_base.cfg
+02:57:02:20000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/en_base_template.cfg
+02:57:02:20000 Status 0 from register 
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instlang.cmd
+02:57:02:20000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+Goto to label: INSTALL_FILE
+02:57:02:847000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/en/en_cfgtext.xml
+02:57:02:847000 Status 0 from register 
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from include INSTALL_FILE
+02:57:02:847000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/cs/en_cfgtext.xml
+Goto to label: END
+02:57:02:847000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from include END
+02:57:02:847000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/da/en_cfgtext.xml
+Goto to label: END
+02:57:02:847000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from include END
+02:57:02:847000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/de/en_cfgtext.xml
+Goto to label: END
+02:57:02:847000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from include END
+02:57:02:847000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/es/en_cfgtext.xml
+Goto to label: END
+02:57:02:847000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from include END
+02:57:02:847000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/fi/en_cfgtext.xml
+Goto to label: END
+02:57:02:847000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from include END
+02:57:02:847000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/fr/en_cfgtext.xml
+Goto to label: END
+02:57:02:847000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from include END
+02:57:02:847000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/hu/en_cfgtext.xml
+Goto to label: END
+02:57:02:847000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from include END
+02:57:02:847000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/it/en_cfgtext.xml
+Goto to label: END
+02:57:02:847000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from include END
+02:57:02:847000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/ja/en_cfgtext.xml
+Goto to label: END
+02:57:02:847000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from include END
+02:57:02:847000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/ko/en_cfgtext.xml
+Goto to label: END
+02:57:02:847000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from include END
+02:57:02:847000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/nl/en_cfgtext.xml
+Goto to label: END
+02:57:02:847000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from include END
+02:57:02:847000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/pl/en_cfgtext.xml
+Goto to label: END
+02:57:02:847000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from include END
+02:57:02:847000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/pt/en_cfgtext.xml
+Goto to label: END
+02:57:02:847000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from include END
+02:57:02:847000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/ro/en_cfgtext.xml
+Goto to label: END
+02:57:02:847000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from include END
+02:57:02:847000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/ru/en_cfgtext.xml
+Goto to label: END
+02:57:02:847000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from include END
+02:57:02:847000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/sl/en_cfgtext.xml
+Goto to label: END
+02:57:02:847000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from include END
+02:57:02:847000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/sv/en_cfgtext.xml
+Goto to label: END
+02:57:02:847000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from include END
+02:57:02:847000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/tr/en_cfgtext.xml
+Goto to label: END
+02:57:02:847000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from include END
+02:57:02:847000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/zh/en_cfgtext.xml
+Goto to label: END
+02:57:02:847000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/language/install.cmd
+02:57:02:847000 Status 0 from include END
+02:57:02:847000 Status 0 from setstr $LANG
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instlang.cmd
+02:57:02:847000 Status 0 from include $LANG
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/enms/en_base_install.cmd
+02:57:02:847000 Status 0 from include $LANG
+02:57:02:847000 Status 0 from setstr $BOOTPATH
+02:57:03:367000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/SEC_SYSTEM_BASE.cfg.enc
+02:57:04:267000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/INT_SYSTEM_BASE.cfg
+02:57:05:4000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/EXT_SYSTEM_BASE.cfg
+Installing integrated IO driver
+02:57:05:4000 Status 0 from echo
+02:57:05:4000 Status 0 from setstr $BOOTPATH_SAVED
+02:57:05:4000 Status 0 from setstr $BOOTPATH
+Goto to label: LOAD_CMD
+02:57:06:52000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/integratedIO/install.cmd
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/integratedIO/install.cmd
+02:57:06:52000 Status 0 from if_feature_present abb.robotics.controller.io.integrated
+Controller variant does not support integratedIO, skipping
+02:57:06:52000 Status 0 from echo
+Goto to label: END
+02:57:06:52000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/integratedIO/install.cmd
+02:57:06:52000 Status 0 from include END
+02:57:06:52000 Status 0 from setstr $BOOTPATH
+Goto to label: LOAD_CMD
+02:57:06:936000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instdrv.cmd
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instdrv.cmd
+02:57:06:936000 Status 0 from fileexist C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/DATA/EXT_DRV.cfg
+Goto to label: DRV_INSTALL
+02:57:06:936000 Status 0 from goto DRV_INSTALL
+02:57:06:936000 Status 0 from getkey Drive1
+02:57:06:936000 Status 0 from setvar
+02:57:06:936000 Status 0 from setstr $TEMP1
+02:57:06:936000 Status 0 from getkey Drive1Select
+02:57:06:936000 Status 0 from mediaexist DC430A6
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/drives/drv1_lib/install.cmd
+02:57:07:890000 Status 0 from setvar
+02:57:07:890000 Status 0 from getkey Drive1Module
+Goto to label: DM430A2
+02:57:07:890000 Status 0 from goto DM430A2
+Installing config for drive module
+02:57:07:890000 Status 0 from echo
+02:57:08:840000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/drives/drv1_lib/drvcfg/SEC_DRIVE_MODULE1_MDU430.cfg.enc
+02:57:09:586000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/drives/drv1_lib/drvcfg/EXT_DRIVE_MODULE1_MDU430.cfg
+Goto to label: DRIVE_UNIT
+02:57:09:586000 Status 0 from goto DRIVE_UNIT
+02:57:09:586000 Status 0 from setvar
+02:57:09:586000 Status 0 from getkey Drive1Unit
+Goto to label: DU430A6
+02:57:09:586000 Status 0 from goto DU430A6
+Installing config for drive unit
+02:57:09:586000 Status 0 from echo
+02:57:10:442000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/drives/drv1_lib/drvcfg/INT_DRIVE_MDU430_430_1PH_POS2_DM1.cfg
+Goto to label: DC_LINK
+02:57:10:442000 Status 0 from goto DC_LINK
+02:57:10:442000 Status 0 from setvar
+02:57:10:442000 Status 0 from getkey Drive1Select
+Goto to label: DC430A6
+02:57:10:442000 Status 0 from goto DC430A6
+Installing config for DC link (MDU6-430C 1-phase)
+02:57:10:442000 Status 0 from echo
+02:57:11:200000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/drives/drv1_lib/drvcfg/INT_RECTIFIER_MRU430_1PH_DM1.cfg
+02:57:11:912000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/drives/drv1_lib/drvcfg/SEC_RECTIFIER_MRU430_1PH_DM1.cfg.enc
+02:57:12:598000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/drives/drv1_lib/drvcfg/INT_TRAFO7_DM1.cfg
+Goto to label: EXTAXPOS1_LABEL
+02:57:12:598000 Status 0 from goto EXTAXPOS1_LABEL
+02:57:12:598000 Status 0 from setvar
+Goto to label: EXTAXPOS1NN
+02:57:12:598000 Status 0 from getkey AddAx1Pos1Select
+No additional axis in position 1
+02:57:12:598000 Status 0 from echo
+Goto to label: END_LABEL
+02:57:12:598000 Status 0 from goto END_LABEL
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/drives/drv1_lib/install.cmd
+Goto to label: DRV2
+02:57:12:598000 Status 0 from selectmedia AddAx1Pos1Select
+Goto to label: TRY_NEXT
+02:57:12:598000 Status 0 from getkey Drive2
+Goto to label: TRY_NEXT
+02:57:12:598000 Status 0 from getkey Drive3
+Goto to label: END_LABEL
+02:57:12:598000 Status 0 from getkey Drive4
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instdrv.cmd
+02:57:12:598000 Status 0 from include END_LABEL
+Goto to label: LOAD_CMD
+02:57:13:497000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instirb.cmd
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instirb.cmd
+02:57:13:497000 Status 0 from fileexist C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/DATA/EXT_MOC.cfg
+Goto to label: IRB_INSTALL
+02:57:13:497000 Status 0 from goto IRB_INSTALL
+02:57:13:497000 Status 0 from setvar
+02:57:13:497000 Status 0 from getkey IrbOpt
+02:57:13:497000 Status 0 from setstr $ANSWER
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Robots_1.10.0/install.cmd
+02:57:14:407000 Status 0 from if INSTALL_OPTIONS
+02:57:14:407000 Status 0 from register $PRODUCTS/Robots_1.10.0
+02:57:14:407000 Status 0 from setenv
+02:57:14:407000 Status 0 from setstr $ROBOTS
+02:57:14:407000 Status 0 from if END_LABEL
+02:57:15:286000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Robots_1.10.0/system/SEC_SYSTEM.cfg.enc
+02:57:15:286000 Status 0 from setvar
+02:57:15:286000 Status 0 from getkey Irb1
+02:57:15:286000 Status 0 from setvar
+02:57:15:286000 Status 0 from setstr $TEMP1
+02:57:15:286000 Status 0 from getkey Irb1Desc
+02:57:15:286000 Status 0 from mediaexist CRB 1100-4/0.47
+02:57:15:286000 Status 0 from setvar
+02:57:15:286000 Status 0 from getkey Irb1MediaSelect
+Goto to label: LOAD_IRB
+02:57:16:404000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Robots_1.10.0/robots/irb1_1100/install.cmd
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Robots_1.10.0/robots/irb1_1100/install.cmd
+
+02:57:16:404000 Status 0 from print
+IRB 1100 family
+02:57:16:404000 Status 0 from print
+Goto to label: CLEANSC
+02:57:16:404000 Status 0 from direxist C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/OPTIONS/SC
+Goto to label: CLEANSC1
+02:57:16:404000 Status 0 from fileexist C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/OPTIONS/SC/SC_ROB_1.xml
+02:57:16:404000 Status 0 from delete C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/OPTIONS/SC/SC_ROB_1.xml
+02:57:16:404000 Status 0 from setvar
+02:57:16:404000 Status 0 from getkey Irb1Desc
+Installing CRB 1100-4/0.47
+02:57:16:404000 Status 0 from echo
+02:57:16:404000 Status 0 from getkey Irb1Select
+Goto to label: CRB1100_0_47_4
+02:57:16:404000 Status 0 from goto CRB1100_0_47_4
+02:57:17:398000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Robots_1.10.0/robots/irb1_1100/irbcfg/SEC_1100C_0.47_4_1.cfg.enc
+02:57:18:383000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Robots_1.10.0/robots/irb1_1100/irbcfg/INT_1100C_0.47_4_1.cfg
+02:57:19:315000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Robots_1.10.0/robots/irb1_1100/irbcfg/EXT_1100C_0.47_4_1.cfg
+02:57:19:315000 Status 0 from getkey SAFETYMODULE
+02:57:20:138000 Status 0 from copy C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Robots_1.10.0/robots/irb1_1100/irbcfg/SC_1100C_0.47_4_1.xml
+Goto to label: TRY_NEXT
+02:57:20:138000 Status 0 from goto TRY_NEXT
+No calibration data available
+02:57:20:138000 Status 0 from print
+02:57:20:904000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Robots_1.10.0/robots/irb1_1100/irbcfg/UNCALIB_1.cfg
+Goto to label: TRY_NEXT
+02:57:20:904000 Status 0 from getkey OPTFCTRL
+Goto to label: END_LABEL
+02:57:20:904000 Status 0 from goto END_LABEL
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Robots_1.10.0/robots/irb1_1100/install.cmd
+Goto to label: TRY_NEXT
+02:57:20:904000 Status 0 from selectmedia OPTFCTRL
+02:57:20:904000 Status 0 from setvar
+Goto to label: END_LABEL
+02:57:20:904000 Status 0 from goto END_LABEL
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Robots_1.10.0/install.cmd
+02:57:20:904000 Status 0 from selectmedia OPTFCTRL
+02:57:20:904000 Status 0 from setvar
+02:57:20:904000 Status 0 from getkey Irb1
+02:57:20:904000 Status 0 from setvar
+Goto to label: NO_7AX
+02:57:20:904000 Status 0 from getkey 7AX
+Goto to label: NO_DUAL_ARM_DM
+02:57:20:904000 Status 0 from getkey DUAL_ARM_DM
+Goto to label: STD
+02:57:20:904000 Status 0 from getkey MM
+02:57:21:551000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/tasksys.cfg
+02:57:21:551000 Status 0 from setvar
+Goto to label: TRY_NEXT
+02:57:21:551000 Status 0 from goto TRY_NEXT
+Goto to label: TRY_NEXT
+02:57:21:551000 Status 0 from getkey Irb2
+Goto to label: TRY_NEXT
+02:57:21:551000 Status 0 from getkey Irb3
+Goto to label: TRY_NEXT
+02:57:21:551000 Status 0 from getkey Irb4
+02:57:21:551000 Status 0 from if NO_IRB
+Goto to label: END_LABEL
+02:57:21:551000 Status 0 from goto END_LABEL
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instirb.cmd
+02:57:21:551000 Status 0 from include END_LABEL
+02:57:21:551000 Status 0 from setvar
+02:57:21:551000 Status 0 from setvar
+02:57:21:551000 Status 0 from setstr $OPTIONLEVEL
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+02:57:22:297000 Status 0 from getkey OptionL0
+02:57:22:297000 Status 0 from setvar
+02:57:22:297000 Status 0 from setstr $TEMP1
+02:57:22:297000 Status 0 from getkey ProfinetDeviceDesc
+02:57:22:297000 Status 0 from mediaexist 3020-2 PROFINET Device
+Goto to label: LOAD_OPTION
+02:57:22:297000 Status 0 from goto LOAD_OPTION
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/install.cmd
+Installing PROFINET Option(s)
+02:57:23:345000 Status 0 from verbose
+02:57:23:345000 Status 0 from invoke2 cfg_create_type_xml
+02:57:23:345000 Status 0 from verbose
+02:57:23:345000 Status 0 from register 
+02:57:24:85000 Status 0 from verbose
+02:57:24:85000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/pn_opt_device.cfg
+02:57:25:139000 Status 0 from verbose
+02:57:25:139000 Status 0 from invoke2 cfg_create_type_xml
+02:57:25:139000 Status 0 from verbose
+02:57:25:139000 Status 0 from register 
+02:57:25:857000 Status 0 from verbose
+02:57:25:857000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/pn_driver.cfg
+Installing Option 3020-2 (PROFINET Device)
+02:57:25:857000 Status 0 from verbose
+02:57:25:857000 Status 0 from invoke2 cfg_create_type_xml
+02:57:25:857000 Status 0 from verbose
+02:57:25:857000 Status 0 from register 
+02:57:26:570000 Status 0 from verbose
+02:57:26:570000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/pn_template_opt.cfg
+02:57:26:570000 Status 0 from verbose
+02:57:26:570000 Status 0 from append C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/pn_opt.cmd
+02:57:26:570000 Status 0 from verbose
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instlang.cmd
+02:57:26:570000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+Goto to label: INSTALL_DRIVER_FILE
+02:57:27:529000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/en/pn_driver_cfgtext.xml
+02:57:27:529000 Status 0 from register 
+Goto to label: INSTALL_NETWORK_FILE
+02:57:27:529000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/en/pn_network_cfgtext.xml
+02:57:28:408000 Status 0 from register 
+Goto to label: DEVICE
+02:57:28:408000 Status 0 from is_option_present PNET
+02:57:28:408000 Status 0 from is_option_present PNET_SLAVE
+Goto to label: INSTALL_DEVICE_FILE
+02:57:28:408000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/en/pn_device_cfgtext.xml
+02:57:29:190000 Status 0 from register 
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:190000 Status 0 from include INSTALL_DEVICE_FILE
+02:57:29:190000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/cs/pn_driver_cfgtext.xml
+Goto to label: NETWORK
+02:57:29:190000 Status 0 from goto NETWORK
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/cs/pn_network_cfgtext.xml
+Goto to label: CONTROLLER
+02:57:29:190000 Status 0 from goto CONTROLLER
+Goto to label: DEVICE
+02:57:29:190000 Status 0 from is_option_present PNET
+02:57:29:190000 Status 0 from is_option_present PNET_SLAVE
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/cs/pn_device_cfgtext.xml
+Goto to label: END
+02:57:29:190000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:190000 Status 0 from include END
+02:57:29:190000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/da/pn_driver_cfgtext.xml
+Goto to label: NETWORK
+02:57:29:190000 Status 0 from goto NETWORK
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/da/pn_network_cfgtext.xml
+Goto to label: CONTROLLER
+02:57:29:190000 Status 0 from goto CONTROLLER
+Goto to label: DEVICE
+02:57:29:190000 Status 0 from is_option_present PNET
+02:57:29:190000 Status 0 from is_option_present PNET_SLAVE
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/da/pn_device_cfgtext.xml
+Goto to label: END
+02:57:29:190000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:190000 Status 0 from include END
+02:57:29:190000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/de/pn_driver_cfgtext.xml
+Goto to label: NETWORK
+02:57:29:190000 Status 0 from goto NETWORK
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/de/pn_network_cfgtext.xml
+Goto to label: CONTROLLER
+02:57:29:190000 Status 0 from goto CONTROLLER
+Goto to label: DEVICE
+02:57:29:190000 Status 0 from is_option_present PNET
+02:57:29:190000 Status 0 from is_option_present PNET_SLAVE
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/de/pn_device_cfgtext.xml
+Goto to label: END
+02:57:29:190000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:190000 Status 0 from include END
+02:57:29:190000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/es/pn_driver_cfgtext.xml
+Goto to label: NETWORK
+02:57:29:190000 Status 0 from goto NETWORK
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/es/pn_network_cfgtext.xml
+Goto to label: CONTROLLER
+02:57:29:190000 Status 0 from goto CONTROLLER
+Goto to label: DEVICE
+02:57:29:190000 Status 0 from is_option_present PNET
+02:57:29:190000 Status 0 from is_option_present PNET_SLAVE
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/es/pn_device_cfgtext.xml
+Goto to label: END
+02:57:29:190000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:190000 Status 0 from include END
+02:57:29:190000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/fi/pn_driver_cfgtext.xml
+Goto to label: NETWORK
+02:57:29:190000 Status 0 from goto NETWORK
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/fi/pn_network_cfgtext.xml
+Goto to label: CONTROLLER
+02:57:29:190000 Status 0 from goto CONTROLLER
+Goto to label: DEVICE
+02:57:29:190000 Status 0 from is_option_present PNET
+02:57:29:190000 Status 0 from is_option_present PNET_SLAVE
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/fi/pn_device_cfgtext.xml
+Goto to label: END
+02:57:29:190000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:190000 Status 0 from include END
+02:57:29:190000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/fr/pn_driver_cfgtext.xml
+Goto to label: NETWORK
+02:57:29:190000 Status 0 from goto NETWORK
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/fr/pn_network_cfgtext.xml
+Goto to label: CONTROLLER
+02:57:29:190000 Status 0 from goto CONTROLLER
+Goto to label: DEVICE
+02:57:29:190000 Status 0 from is_option_present PNET
+02:57:29:190000 Status 0 from is_option_present PNET_SLAVE
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/fr/pn_device_cfgtext.xml
+Goto to label: END
+02:57:29:190000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:190000 Status 0 from include END
+02:57:29:190000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/hu/pn_driver_cfgtext.xml
+Goto to label: NETWORK
+02:57:29:190000 Status 0 from goto NETWORK
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/hu/pn_network_cfgtext.xml
+Goto to label: CONTROLLER
+02:57:29:190000 Status 0 from goto CONTROLLER
+Goto to label: DEVICE
+02:57:29:190000 Status 0 from is_option_present PNET
+02:57:29:190000 Status 0 from is_option_present PNET_SLAVE
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/hu/pn_device_cfgtext.xml
+Goto to label: END
+02:57:29:190000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:190000 Status 0 from include END
+02:57:29:190000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/it/pn_driver_cfgtext.xml
+Goto to label: NETWORK
+02:57:29:190000 Status 0 from goto NETWORK
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/it/pn_network_cfgtext.xml
+Goto to label: CONTROLLER
+02:57:29:190000 Status 0 from goto CONTROLLER
+Goto to label: DEVICE
+02:57:29:190000 Status 0 from is_option_present PNET
+02:57:29:190000 Status 0 from is_option_present PNET_SLAVE
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/it/pn_device_cfgtext.xml
+Goto to label: END
+02:57:29:190000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:190000 Status 0 from include END
+02:57:29:190000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/ja/pn_driver_cfgtext.xml
+Goto to label: NETWORK
+02:57:29:190000 Status 0 from goto NETWORK
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/ja/pn_network_cfgtext.xml
+Goto to label: CONTROLLER
+02:57:29:190000 Status 0 from goto CONTROLLER
+Goto to label: DEVICE
+02:57:29:190000 Status 0 from is_option_present PNET
+02:57:29:190000 Status 0 from is_option_present PNET_SLAVE
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/ja/pn_device_cfgtext.xml
+Goto to label: END
+02:57:29:190000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:190000 Status 0 from include END
+02:57:29:190000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/ko/pn_driver_cfgtext.xml
+Goto to label: NETWORK
+02:57:29:190000 Status 0 from goto NETWORK
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/ko/pn_network_cfgtext.xml
+Goto to label: CONTROLLER
+02:57:29:190000 Status 0 from goto CONTROLLER
+Goto to label: DEVICE
+02:57:29:190000 Status 0 from is_option_present PNET
+02:57:29:190000 Status 0 from is_option_present PNET_SLAVE
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/ko/pn_device_cfgtext.xml
+Goto to label: END
+02:57:29:190000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:190000 Status 0 from include END
+02:57:29:190000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/nl/pn_driver_cfgtext.xml
+Goto to label: NETWORK
+02:57:29:190000 Status 0 from goto NETWORK
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/nl/pn_network_cfgtext.xml
+Goto to label: CONTROLLER
+02:57:29:190000 Status 0 from goto CONTROLLER
+Goto to label: DEVICE
+02:57:29:190000 Status 0 from is_option_present PNET
+02:57:29:190000 Status 0 from is_option_present PNET_SLAVE
+02:57:29:190000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/nl/pn_device_cfgtext.xml
+Goto to label: END
+02:57:29:190000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:200000 Status 0 from include END
+02:57:29:200000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:200000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/pl/pn_driver_cfgtext.xml
+Goto to label: NETWORK
+02:57:29:200000 Status 0 from goto NETWORK
+02:57:29:200000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/pl/pn_network_cfgtext.xml
+Goto to label: CONTROLLER
+02:57:29:200000 Status 0 from goto CONTROLLER
+Goto to label: DEVICE
+02:57:29:200000 Status 0 from is_option_present PNET
+02:57:29:200000 Status 0 from is_option_present PNET_SLAVE
+02:57:29:200000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/pl/pn_device_cfgtext.xml
+Goto to label: END
+02:57:29:200000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:200000 Status 0 from include END
+02:57:29:200000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:200000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/pt/pn_driver_cfgtext.xml
+Goto to label: NETWORK
+02:57:29:200000 Status 0 from goto NETWORK
+02:57:29:200000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/pt/pn_network_cfgtext.xml
+Goto to label: CONTROLLER
+02:57:29:200000 Status 0 from goto CONTROLLER
+Goto to label: DEVICE
+02:57:29:200000 Status 0 from is_option_present PNET
+02:57:29:200000 Status 0 from is_option_present PNET_SLAVE
+02:57:29:200000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/pt/pn_device_cfgtext.xml
+Goto to label: END
+02:57:29:200000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:200000 Status 0 from include END
+02:57:29:200000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:200000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/ro/pn_driver_cfgtext.xml
+Goto to label: NETWORK
+02:57:29:200000 Status 0 from goto NETWORK
+02:57:29:200000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/ro/pn_network_cfgtext.xml
+Goto to label: CONTROLLER
+02:57:29:200000 Status 0 from goto CONTROLLER
+Goto to label: DEVICE
+02:57:29:200000 Status 0 from is_option_present PNET
+02:57:29:200000 Status 0 from is_option_present PNET_SLAVE
+02:57:29:200000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/ro/pn_device_cfgtext.xml
+Goto to label: END
+02:57:29:200000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:200000 Status 0 from include END
+02:57:29:200000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:200000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/ru/pn_driver_cfgtext.xml
+Goto to label: NETWORK
+02:57:29:200000 Status 0 from goto NETWORK
+02:57:29:200000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/ru/pn_network_cfgtext.xml
+Goto to label: CONTROLLER
+02:57:29:200000 Status 0 from goto CONTROLLER
+Goto to label: DEVICE
+02:57:29:200000 Status 0 from is_option_present PNET
+02:57:29:200000 Status 0 from is_option_present PNET_SLAVE
+02:57:29:200000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/ru/pn_device_cfgtext.xml
+Goto to label: END
+02:57:29:200000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:200000 Status 0 from include END
+02:57:29:200000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:200000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/sl/pn_driver_cfgtext.xml
+Goto to label: NETWORK
+02:57:29:200000 Status 0 from goto NETWORK
+02:57:29:200000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/sl/pn_network_cfgtext.xml
+Goto to label: CONTROLLER
+02:57:29:200000 Status 0 from goto CONTROLLER
+Goto to label: DEVICE
+02:57:29:200000 Status 0 from is_option_present PNET
+02:57:29:200000 Status 0 from is_option_present PNET_SLAVE
+02:57:29:200000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/sl/pn_device_cfgtext.xml
+Goto to label: END
+02:57:29:200000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:200000 Status 0 from include END
+02:57:29:200000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:200000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/sv/pn_driver_cfgtext.xml
+Goto to label: NETWORK
+02:57:29:200000 Status 0 from goto NETWORK
+02:57:29:200000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/sv/pn_network_cfgtext.xml
+Goto to label: CONTROLLER
+02:57:29:200000 Status 0 from goto CONTROLLER
+Goto to label: DEVICE
+02:57:29:200000 Status 0 from is_option_present PNET
+02:57:29:200000 Status 0 from is_option_present PNET_SLAVE
+02:57:29:200000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/sv/pn_device_cfgtext.xml
+Goto to label: END
+02:57:29:200000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:200000 Status 0 from include END
+02:57:29:200000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:200000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/tr/pn_driver_cfgtext.xml
+Goto to label: NETWORK
+02:57:29:200000 Status 0 from goto NETWORK
+02:57:29:200000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/tr/pn_network_cfgtext.xml
+Goto to label: CONTROLLER
+02:57:29:200000 Status 0 from goto CONTROLLER
+Goto to label: DEVICE
+02:57:29:200000 Status 0 from is_option_present PNET
+02:57:29:200000 Status 0 from is_option_present PNET_SLAVE
+02:57:29:200000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/tr/pn_device_cfgtext.xml
+Goto to label: END
+02:57:29:200000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:200000 Status 0 from include END
+02:57:29:200000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:200000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/zh/pn_driver_cfgtext.xml
+Goto to label: NETWORK
+02:57:29:200000 Status 0 from goto NETWORK
+02:57:29:200000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/zh/pn_network_cfgtext.xml
+Goto to label: CONTROLLER
+02:57:29:200000 Status 0 from goto CONTROLLER
+Goto to label: DEVICE
+02:57:29:200000 Status 0 from is_option_present PNET
+02:57:29:200000 Status 0 from is_option_present PNET_SLAVE
+02:57:29:200000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/zh/pn_device_cfgtext.xml
+Goto to label: END
+02:57:29:200000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/language/install.cmd
+02:57:29:200000 Status 0 from include END
+02:57:29:200000 Status 0 from setstr $LANG
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instlang.cmd
+02:57:29:200000 Status 0 from include $LANG
+... PROFINET installation done
+02:57:29:200000 Status 0 from verbose
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/pnet/install.cmd
+Goto to label: CONFIG_NEXT
+02:57:29:200000 Status 0 from selectmedia PNET_SLAVE
+02:57:29:200000 Status 0 from addvar
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+02:57:29:200000 Status 0 from getkey OptionL0
+02:57:29:200000 Status 0 from setvar
+02:57:29:200000 Status 0 from setstr $TEMP1
+02:57:29:200000 Status 0 from getkey DeviceNetSingleDesc
+02:57:29:200000 Status 0 from mediaexist 3029-1 DeviceNet Single Channel
+Goto to label: LOAD_OPTION
+02:57:29:200000 Status 0 from goto LOAD_OPTION
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/install.cmd
+Installing DeviceNet option ...
+02:57:29:876000 Status 0 from echo
+Goto to label: INSTALL_CONTROLLER_FILE
+02:57:29:876000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/Dnet_controller_cfgtypes.xml
+02:57:29:876000 Status 0 from invoke2 cfg_create_type_xml
+Goto to label: INSTALL_DEVICE_FILE
+02:57:29:876000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/Dnet_device_cfgtypes.xml
+02:57:29:876000 Status 0 from invoke2 cfg_create_type_xml
+02:57:29:876000 Status 0 from register 
+02:57:30:826000 Status 0 from register 
+02:57:31:534000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/Dnet_opt.cfg
+02:57:32:391000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/Dnet_template_opt.cfg
+02:57:32:391000 Status 0 from append C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/Dnet_opt.cmd
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instlang.cmd
+02:57:32:391000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+Goto to label: INSTALL_CONTROLLER_FILE
+02:57:33:213000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/en/dnet_controller_cfgtext.xml
+02:57:33:213000 Status 0 from register 
+Goto to label: INSTALL_DEVICE_FILE
+02:57:33:213000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/en/dnet_device_cfgtext.xml
+02:57:34:15000 Status 0 from register 
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from include INSTALL_DEVICE_FILE
+02:57:34:15000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/cs/dnet_controller_cfgtext.xml
+Goto to label: DEVICE
+02:57:34:15000 Status 0 from goto DEVICE
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/cs/dnet_device_cfgtext.xml
+Goto to label: END
+02:57:34:15000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from include END
+02:57:34:15000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/da/dnet_controller_cfgtext.xml
+Goto to label: DEVICE
+02:57:34:15000 Status 0 from goto DEVICE
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/da/dnet_device_cfgtext.xml
+Goto to label: END
+02:57:34:15000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from include END
+02:57:34:15000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/de/dnet_controller_cfgtext.xml
+Goto to label: DEVICE
+02:57:34:15000 Status 0 from goto DEVICE
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/de/dnet_device_cfgtext.xml
+Goto to label: END
+02:57:34:15000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from include END
+02:57:34:15000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/es/dnet_controller_cfgtext.xml
+Goto to label: DEVICE
+02:57:34:15000 Status 0 from goto DEVICE
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/es/dnet_device_cfgtext.xml
+Goto to label: END
+02:57:34:15000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from include END
+02:57:34:15000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/fi/dnet_controller_cfgtext.xml
+Goto to label: DEVICE
+02:57:34:15000 Status 0 from goto DEVICE
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/fi/dnet_device_cfgtext.xml
+Goto to label: END
+02:57:34:15000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from include END
+02:57:34:15000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/fr/dnet_controller_cfgtext.xml
+Goto to label: DEVICE
+02:57:34:15000 Status 0 from goto DEVICE
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/fr/dnet_device_cfgtext.xml
+Goto to label: END
+02:57:34:15000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from include END
+02:57:34:15000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/hu/dnet_controller_cfgtext.xml
+Goto to label: DEVICE
+02:57:34:15000 Status 0 from goto DEVICE
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/hu/dnet_device_cfgtext.xml
+Goto to label: END
+02:57:34:15000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from include END
+02:57:34:15000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/it/dnet_controller_cfgtext.xml
+Goto to label: DEVICE
+02:57:34:15000 Status 0 from goto DEVICE
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/it/dnet_device_cfgtext.xml
+Goto to label: END
+02:57:34:15000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from include END
+02:57:34:15000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/ja/dnet_controller_cfgtext.xml
+Goto to label: DEVICE
+02:57:34:15000 Status 0 from goto DEVICE
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/ja/dnet_device_cfgtext.xml
+Goto to label: END
+02:57:34:15000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from include END
+02:57:34:15000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/ko/dnet_controller_cfgtext.xml
+Goto to label: DEVICE
+02:57:34:15000 Status 0 from goto DEVICE
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/ko/dnet_device_cfgtext.xml
+Goto to label: END
+02:57:34:15000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from include END
+02:57:34:15000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/nl/dnet_controller_cfgtext.xml
+Goto to label: DEVICE
+02:57:34:15000 Status 0 from goto DEVICE
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/nl/dnet_device_cfgtext.xml
+Goto to label: END
+02:57:34:15000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from include END
+02:57:34:15000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/pl/dnet_controller_cfgtext.xml
+Goto to label: DEVICE
+02:57:34:15000 Status 0 from goto DEVICE
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/pl/dnet_device_cfgtext.xml
+Goto to label: END
+02:57:34:15000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from include END
+02:57:34:15000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/pt/dnet_controller_cfgtext.xml
+Goto to label: DEVICE
+02:57:34:15000 Status 0 from goto DEVICE
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/pt/dnet_device_cfgtext.xml
+Goto to label: END
+02:57:34:15000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from include END
+02:57:34:15000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/ro/dnet_controller_cfgtext.xml
+Goto to label: DEVICE
+02:57:34:15000 Status 0 from goto DEVICE
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/ro/dnet_device_cfgtext.xml
+Goto to label: END
+02:57:34:15000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from include END
+02:57:34:15000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/ru/dnet_controller_cfgtext.xml
+Goto to label: DEVICE
+02:57:34:15000 Status 0 from goto DEVICE
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/ru/dnet_device_cfgtext.xml
+Goto to label: END
+02:57:34:15000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from include END
+02:57:34:15000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/sl/dnet_controller_cfgtext.xml
+Goto to label: DEVICE
+02:57:34:15000 Status 0 from goto DEVICE
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/sl/dnet_device_cfgtext.xml
+Goto to label: END
+02:57:34:15000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from include END
+02:57:34:15000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/sv/dnet_controller_cfgtext.xml
+Goto to label: DEVICE
+02:57:34:15000 Status 0 from goto DEVICE
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/sv/dnet_device_cfgtext.xml
+Goto to label: END
+02:57:34:15000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from include END
+02:57:34:15000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/tr/dnet_controller_cfgtext.xml
+Goto to label: DEVICE
+02:57:34:15000 Status 0 from goto DEVICE
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/tr/dnet_device_cfgtext.xml
+Goto to label: END
+02:57:34:15000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from include END
+02:57:34:15000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:15000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/zh/dnet_controller_cfgtext.xml
+Goto to label: DEVICE
+02:57:34:15000 Status 0 from goto DEVICE
+02:57:34:25000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/zh/dnet_device_cfgtext.xml
+Goto to label: END
+02:57:34:25000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/language/install.cmd
+02:57:34:25000 Status 0 from include END
+02:57:34:25000 Status 0 from setstr $LANG
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instlang.cmd
+02:57:34:25000 Status 0 from include $LANG
+...done
+02:57:34:25000 Status 0 from echo
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/dnmss/install.cmd
+Goto to label: CONFIG_NEXT
+02:57:34:25000 Status 0 from selectmedia 
+02:57:34:25000 Status 0 from addvar
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+Goto to label: END_OF_LOOP
+02:57:34:25000 Status 0 from getkey OptionL0
+02:57:34:25000 Status 0 from setvar
+Goto to label: END_OF_FILE
+02:57:34:25000 Status 0 from goto END_OF_FILE
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+02:57:34:25000 Status 0 from loop END_OF_FILE
+02:57:34:25000 Status 0 from setvar
+02:57:34:25000 Status 0 from setvar
+02:57:34:25000 Status 0 from setstr $OPTIONLEVEL
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+Goto to label: END_OF_LOOP
+02:57:34:25000 Status 0 from getkey OptionL1
+02:57:34:25000 Status 0 from setvar
+Goto to label: END_OF_FILE
+02:57:34:25000 Status 0 from goto END_OF_FILE
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+02:57:34:25000 Status 0 from loop END_OF_FILE
+02:57:34:25000 Status 0 from setvar
+02:57:34:25000 Status 0 from setvar
+02:57:34:25000 Status 0 from setstr $OPTIONLEVEL
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+02:57:34:25000 Status 0 from getkey Option
+02:57:34:25000 Status 0 from setvar
+02:57:34:25000 Status 0 from setstr $TEMP1
+02:57:34:25000 Status 0 from getkey RemoteServiceDesc
+02:57:34:25000 Status 0 from mediaexist Remote Service
+Goto to label: LOAD_OPTION
+02:57:34:25000 Status 0 from goto LOAD_OPTION
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cse/install.cmd
+Installing Connected Services Embedded
+02:57:34:911000 Status 0 from echo
+02:57:34:911000 Status 0 from add_eventlog_domain
+02:57:34:911000 Status 0 from register 
+02:57:36:705000 Status 0 from register 
+02:57:37:528000 Status 0 from register 
+02:57:38:191000 Status 0 from invoke2 cfg_create_type_xml
+02:57:38:191000 Status 0 from register 
+02:57:38:191000 Status 0 from register 
+02:57:38:908000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cse/sio_cse_nondeletable.cfg
+Goto to label: VC_SKIP_RSE
+02:57:38:908000 Status 0 from ifvc VC_SKIP_RSE
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cse/install.cmd
+Goto to label: CONFIG_NEXT
+02:57:38:908000 Status 0 from selectmedia SIO
+02:57:38:908000 Status 0 from addvar
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+02:57:38:908000 Status 0 from getkey Option
+02:57:38:908000 Status 0 from setvar
+02:57:38:908000 Status 0 from setstr $TEMP1
+02:57:38:908000 Status 0 from getkey CSGatewayDesc
+02:57:38:908000 Status 0 from mediaexist Connected Services Gateway
+Goto to label: LOAD_OPTION
+02:57:38:908000 Status 0 from goto LOAD_OPTION
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/csgw/install.cmd
+02:57:40:792000 Status 0 from invoke2 cfg_create_type_xml
+02:57:40:792000 Status 0 from register 
+02:57:40:792000 Status 0 from register 
+02:57:41:487000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/csgw/sio_csgw_nondeletable.cfg
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/csgw/install.cmd
+Goto to label: CONFIG_NEXT
+02:57:41:487000 Status 0 from selectmedia SIO
+02:57:41:487000 Status 0 from addvar
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+02:57:41:487000 Status 0 from getkey Option
+02:57:41:487000 Status 0 from setvar
+02:57:41:487000 Status 0 from setstr $TEMP1
+02:57:41:487000 Status 0 from getkey SAFETYMODULEDesc
+02:57:41:487000 Status 0 from mediaexist Safety Module
+Goto to label: LOAD_OPTION
+02:57:41:487000 Status 0 from goto LOAD_OPTION
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/install.cmd
+Installing Safety Controller
+02:57:42:123000 Status 0 from echo
+02:57:42:123000 Status 0 from setenv
+02:57:42:123000 Status 0 from mkdir C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/OPTIONS/SC/SCDMP
+Goto to label: ADD_VC_DIR
+02:57:42:123000 Status 0 from ifvc ADD_VC_DIR
+02:57:42:123000 Status 0 from mkdir C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/SC_DISK
+02:57:42:742000 Status 0 from copy C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/scimageversion
+Goto to label: NEXT_STEP
+02:57:42:742000 Status 0 from fileexist C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/OPTIONS/sc/SC_ROB_1.XML
+02:57:42:742000 Status 0 from fileexist C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/OPTIONS/sc/SC_ROB_2.XML
+02:57:42:742000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/SC_ROB_2.XML
+Goto to label: NEXT_STEP
+02:57:42:742000 Status 0 from goto NEXT_STEP
+02:57:42:742000 Status 0 from fileexist C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/OPTIONS/sc/SC_ROB_3.XML
+02:57:42:742000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/SC_ROB_3.XML
+Goto to label: NEXT_STEP
+02:57:42:742000 Status 0 from goto NEXT_STEP
+02:57:42:742000 Status 0 from fileexist C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/OPTIONS/sc/SC_ROB_4.XML
+02:57:42:742000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/SC_ROB_4.XML
+Goto to label: NEXT_STEP
+02:57:42:742000 Status 0 from goto NEXT_STEP
+02:57:43:457000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/BAR_SYS_1.cfg
+Goto to label: INSTALL_SCINC_FILE
+02:57:44:442000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/install_scinc.cmd
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/install_scinc.cmd
+Installing Safety Controller Feedback INC Driver
+02:57:44:442000 Status 0 from echo
+02:57:44:442000 Status 0 from invoke2 cfg_create_type_xml
+02:57:44:442000 Status 0 from if_feature_present abb.robotics.controller.safemove.essential
+02:57:45:187000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/ScInc_opt_standard.cfg
+Goto to label: END_CFG
+02:57:45:187000 Status 0 from goto END_CFG
+02:57:45:187000 Status 0 from append C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/ScInc_opt.cmd
+...done
+02:57:45:187000 Status 0 from echo
+Goto to label: END
+02:57:45:187000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/install_scinc.cmd
+02:57:45:187000 Status 0 from include END
+Goto to label: INSTALL_INTBUS_FILE
+02:57:45:978000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/install_int_bus.cmd
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/install_int_bus.cmd
+Installing IntBus
+02:57:45:978000 Status 0 from echo
+02:57:45:978000 Status 0 from invoke2 cfg_create_type_xml
+02:57:46:670000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/int_bus_network.cfg
+...done
+02:57:46:670000 Status 0 from echo
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/install_int_bus.cmd
+02:57:46:670000 Status 0 from include ...done
+02:57:46:670000 Status 0 from append C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/scopt.cmd
+02:57:46:670000 Status 0 from invoke2 scorch_config_reset_cfg
+Goto to label: NEXT_STEP
+02:57:46:670000 Status 0 from fileexist C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/OPTIONS/sc/sc_cfg.xml
+02:57:46:670000 Status 0 from fileexist C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/OPTIONS/sc/sc_cfg_list.xml
+Goto to label: NEXT_STEP
+02:57:46:670000 Status 0 from goto NEXT_STEP
+Goto to label: NEXT_STEP
+02:57:46:670000 Status 0 from fileexist C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/OPTIONS/sc/sc_eio.cfg
+02:57:46:670000 Status 0 from config C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/OPTIONS/sc/sc_eio.cfg
+Goto to label: INSTALL_MODULAR_SAFETY_LOCALIO_CFG
+02:57:47:533000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/sc_local_io.cfg
+02:57:47:533000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/sc_local_io.cfg
+Goto to label: INSTALL_MODULAR_SAFETY_EIO_CFG
+02:57:48:398000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/saf_eio.cfg
+02:57:48:398000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/saf_eio.cfg
+Goto to label: INSTALL_DRIVE_EIO_CFG
+02:57:49:263000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/drv_eio.cfg
+02:57:49:263000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/drv_eio.cfg
+Goto to label: NO_SOFTSAFE
+02:57:49:263000 Status 0 from is_option_present SOSAF
+02:57:49:263000 Status 0 from register 
+02:57:49:976000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/runchn.cfg
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instlang.cmd
+02:57:49:976000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+Goto to label: INSTALL_FILE
+02:57:50:762000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/en/runchn_cfgtext.xml
+02:57:50:762000 Status 0 from register 
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from include INSTALL_FILE
+02:57:50:762000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/cs/runchn_cfgtext.xml
+Goto to label: END
+02:57:50:762000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from include END
+02:57:50:762000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/da/runchn_cfgtext.xml
+Goto to label: END
+02:57:50:762000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from include END
+02:57:50:762000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/de/runchn_cfgtext.xml
+Goto to label: END
+02:57:50:762000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from include END
+02:57:50:762000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/es/runchn_cfgtext.xml
+Goto to label: END
+02:57:50:762000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from include END
+02:57:50:762000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/fi/runchn_cfgtext.xml
+Goto to label: END
+02:57:50:762000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from include END
+02:57:50:762000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/fr/runchn_cfgtext.xml
+Goto to label: END
+02:57:50:762000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from include END
+02:57:50:762000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/hu/runchn_cfgtext.xml
+Goto to label: END
+02:57:50:762000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from include END
+02:57:50:762000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/it/runchn_cfgtext.xml
+Goto to label: END
+02:57:50:762000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from include END
+02:57:50:762000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/ja/runchn_cfgtext.xml
+Goto to label: END
+02:57:50:762000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from include END
+02:57:50:762000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/ko/runchn_cfgtext.xml
+Goto to label: END
+02:57:50:762000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from include END
+02:57:50:762000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/nl/runchn_cfgtext.xml
+Goto to label: END
+02:57:50:762000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from include END
+02:57:50:762000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/pl/runchn_cfgtext.xml
+Goto to label: END
+02:57:50:762000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from include END
+02:57:50:762000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/pt/runchn_cfgtext.xml
+Goto to label: END
+02:57:50:762000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from include END
+02:57:50:762000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/ro/runchn_cfgtext.xml
+Goto to label: END
+02:57:50:762000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from include END
+02:57:50:762000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/ru/runchn_cfgtext.xml
+Goto to label: END
+02:57:50:762000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from include END
+02:57:50:762000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/sl/runchn_cfgtext.xml
+Goto to label: END
+02:57:50:762000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from include END
+02:57:50:762000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/sv/runchn_cfgtext.xml
+Goto to label: END
+02:57:50:762000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from include END
+02:57:50:762000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/tr/runchn_cfgtext.xml
+Goto to label: END
+02:57:50:762000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from include END
+02:57:50:762000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/zh/runchn_cfgtext.xml
+Goto to label: END
+02:57:50:762000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/language/install.cmd
+02:57:50:762000 Status 0 from include END
+02:57:50:762000 Status 0 from setstr $LANG
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instlang.cmd
+02:57:50:762000 Status 0 from include $LANG
+Goto to label: END
+02:57:50:762000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sc/install.cmd
+Goto to label: CONFIG_NEXT
+02:57:50:762000 Status 0 from selectmedia 
+02:57:50:762000 Status 0 from addvar
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+02:57:50:762000 Status 0 from getkey Option
+02:57:50:762000 Status 0 from setvar
+02:57:50:762000 Status 0 from setstr $TEMP1
+02:57:50:762000 Status 0 from getkey ProfinetDeviceDesc
+Goto to label: CONFIG_NEXT
+02:57:50:762000 Status 0 from mediaexist 3020-2 PROFINET Device
+02:57:50:762000 Status 0 from addvar
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+02:57:50:762000 Status 0 from getkey Option
+02:57:50:762000 Status 0 from setvar
+02:57:50:762000 Status 0 from setstr $TEMP1
+02:57:50:762000 Status 0 from getkey SAFEMOVEPRODesc
+02:57:50:762000 Status 0 from mediaexist 3043-3 SafeMove Collaborative
+Goto to label: LOAD_OPTION
+02:57:50:762000 Status 0 from goto LOAD_OPTION
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/safemove/install.cmd
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/safemove/install.cmd
+Goto to label: CONFIG_NEXT
+02:57:51:195000 Status 0 from selectmedia $ANSWER
+02:57:51:195000 Status 0 from addvar
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+02:57:51:195000 Status 0 from getkey Option
+02:57:51:195000 Status 0 from setvar
+02:57:51:195000 Status 0 from setstr $TEMP1
+02:57:51:195000 Status 0 from getkey DeviceNetSingleDesc
+Goto to label: CONFIG_NEXT
+02:57:51:195000 Status 0 from mediaexist 3029-1 DeviceNet Single Channel
+02:57:51:195000 Status 0 from addvar
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+02:57:51:195000 Status 0 from getkey Option
+02:57:51:195000 Status 0 from setvar
+02:57:51:195000 Status 0 from setstr $TEMP1
+02:57:51:195000 Status 0 from getkey CalaxisDesc
+02:57:51:195000 Status 0 from mediaexist Axis Calibration
+Goto to label: LOAD_OPTION
+02:57:51:195000 Status 0 from goto LOAD_OPTION
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/install.cmd
+Installing Axis Calibration
+02:57:51:949000 Status 0 from echo
+02:57:52:632000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/calax_sys.cfg
+02:57:53:492000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/calax_mmc.cfg
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instlang.cmd
+02:57:53:492000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:57:55:374000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/en/calaxer.xml
+02:57:55:374000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/en/calaxer.xml
+Goto to label: INSTALL_FILE
+02:57:56:398000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/en/calaxop.xml
+02:57:56:398000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/en/calaxop.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+02:57:56:398000 Status 0 from include INSTALL_FILE
+02:57:56:398000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:57:57:273000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/cs/calaxer.xml
+02:57:57:273000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/cs/calaxer.xml
+Goto to label: INSTALL_FILE
+02:57:58:281000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/cs/calaxop.xml
+02:57:58:281000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/cs/calaxop.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+02:57:58:281000 Status 0 from include INSTALL_FILE
+02:57:58:281000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:57:59:103000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/da/calaxer.xml
+02:57:59:103000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/da/calaxer.xml
+Goto to label: INSTALL_FILE
+02:58:00:81000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/da/calaxop.xml
+02:58:00:81000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/da/calaxop.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+02:58:00:81000 Status 0 from include INSTALL_FILE
+02:58:00:81000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:00:893000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/de/calaxer.xml
+02:58:00:893000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/de/calaxer.xml
+Goto to label: INSTALL_FILE
+02:58:01:881000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/de/calaxop.xml
+02:58:01:881000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/de/calaxop.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+02:58:01:881000 Status 0 from include INSTALL_FILE
+02:58:01:881000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:02:828000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/es/calaxer.xml
+02:58:02:828000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/es/calaxer.xml
+Goto to label: INSTALL_FILE
+02:58:03:849000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/es/calaxop.xml
+02:58:03:849000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/es/calaxop.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+02:58:03:849000 Status 0 from include INSTALL_FILE
+02:58:03:849000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:04:662000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/fi/calaxer.xml
+02:58:04:662000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/fi/calaxer.xml
+Goto to label: INSTALL_FILE
+02:58:05:628000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/fi/calaxop.xml
+02:58:05:628000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/fi/calaxop.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+02:58:05:628000 Status 0 from include INSTALL_FILE
+02:58:05:628000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:06:488000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/fr/calaxer.xml
+02:58:06:488000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/fr/calaxer.xml
+Goto to label: INSTALL_FILE
+02:58:07:505000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/fr/calaxop.xml
+02:58:07:505000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/fr/calaxop.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+02:58:07:505000 Status 0 from include INSTALL_FILE
+02:58:07:505000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:08:387000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/hu/calaxer.xml
+02:58:08:387000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/hu/calaxer.xml
+Goto to label: INSTALL_FILE
+02:58:09:398000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/hu/calaxop.xml
+02:58:09:398000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/hu/calaxop.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+02:58:09:398000 Status 0 from include INSTALL_FILE
+02:58:09:398000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:10:239000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/it/calaxer.xml
+02:58:10:239000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/it/calaxer.xml
+Goto to label: INSTALL_FILE
+02:58:11:228000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/it/calaxop.xml
+02:58:11:228000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/it/calaxop.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+02:58:11:228000 Status 0 from include INSTALL_FILE
+02:58:11:228000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:12:99000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/ja/calaxer.xml
+02:58:12:99000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/ja/calaxer.xml
+Goto to label: INSTALL_FILE
+02:58:13:148000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/ja/calaxop.xml
+02:58:13:148000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/ja/calaxop.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+02:58:13:148000 Status 0 from include INSTALL_FILE
+02:58:13:148000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:14:122000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/ko/calaxer.xml
+02:58:14:122000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/ko/calaxer.xml
+Goto to label: INSTALL_FILE
+02:58:15:267000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/ko/calaxop.xml
+02:58:15:267000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/ko/calaxop.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+02:58:15:267000 Status 0 from include INSTALL_FILE
+02:58:15:267000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:16:242000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/nl/calaxer.xml
+02:58:16:242000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/nl/calaxer.xml
+Goto to label: INSTALL_FILE
+02:58:17:339000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/nl/calaxop.xml
+02:58:17:339000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/nl/calaxop.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+02:58:17:339000 Status 0 from include INSTALL_FILE
+02:58:17:339000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:18:288000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/pl/calaxer.xml
+02:58:18:288000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/pl/calaxer.xml
+Goto to label: INSTALL_FILE
+02:58:19:362000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/pl/calaxop.xml
+02:58:19:362000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/pl/calaxop.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+02:58:19:362000 Status 0 from include INSTALL_FILE
+02:58:19:362000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:20:352000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/pt/calaxer.xml
+02:58:20:352000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/pt/calaxer.xml
+Goto to label: INSTALL_FILE
+02:58:21:402000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/pt/calaxop.xml
+02:58:21:402000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/pt/calaxop.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+02:58:21:402000 Status 0 from include INSTALL_FILE
+02:58:21:402000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:22:316000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/ro/calaxer.xml
+02:58:22:316000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/ro/calaxer.xml
+Goto to label: INSTALL_FILE
+02:58:23:439000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/ro/calaxop.xml
+02:58:23:439000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/ro/calaxop.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+02:58:23:439000 Status 0 from include INSTALL_FILE
+02:58:23:439000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:24:935000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/ru/calaxer.xml
+02:58:24:935000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/ru/calaxer.xml
+Goto to label: INSTALL_FILE
+02:58:26:2000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/ru/calaxop.xml
+02:58:26:2000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/ru/calaxop.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+02:58:26:2000 Status 0 from include INSTALL_FILE
+02:58:26:2000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:26:878000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/sl/calaxer.xml
+02:58:26:878000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/sl/calaxer.xml
+Goto to label: INSTALL_FILE
+02:58:27:860000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/sl/calaxop.xml
+02:58:27:860000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/sl/calaxop.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+02:58:27:860000 Status 0 from include INSTALL_FILE
+02:58:27:860000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:28:723000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/sv/calaxer.xml
+02:58:28:723000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/sv/calaxer.xml
+Goto to label: INSTALL_FILE
+02:58:29:723000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/sv/calaxop.xml
+02:58:29:723000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/sv/calaxop.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+02:58:29:723000 Status 0 from include INSTALL_FILE
+02:58:29:723000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:30:560000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/tr/calaxer.xml
+02:58:30:560000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/tr/calaxer.xml
+Goto to label: INSTALL_FILE
+02:58:31:520000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/tr/calaxop.xml
+02:58:31:520000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/tr/calaxop.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+02:58:31:520000 Status 0 from include INSTALL_FILE
+02:58:31:520000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:32:394000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/zh/calaxer.xml
+02:58:32:394000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/zh/calaxer.xml
+Goto to label: INSTALL_FILE
+02:58:33:329000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/zh/calaxop.xml
+02:58:33:329000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/zh/calaxop.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/language/install.cmd
+02:58:33:329000 Status 0 from include INSTALL_FILE
+02:58:33:329000 Status 0 from setstr $LANG
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instlang.cmd
+02:58:33:329000 Status 0 from include $LANG
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/cal_axis/install.cmd
+Goto to label: CONFIG_NEXT
+02:58:33:329000 Status 0 from selectmedia MMC
+02:58:33:329000 Status 0 from addvar
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+02:58:33:329000 Status 0 from getkey Option
+02:58:33:329000 Status 0 from setvar
+02:58:33:329000 Status 0 from setstr $TEMP1
+02:58:33:329000 Status 0 from getkey MOTCOMDesc
+02:58:33:329000 Status 0 from mediaexist Motor Commutation
+Goto to label: LOAD_OPTION
+02:58:33:329000 Status 0 from goto LOAD_OPTION
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/install.cmd
+02:58:34:130000 Status 0 from if END_LABEL
+Installing Motor Commutation Service Routine...
+02:58:34:130000 Status 0 from echo
+02:58:34:806000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/motcom_sys.cfg
+02:58:35:477000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/motcom_mmc.cfg
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instlang.cmd
+02:58:35:477000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:37:206000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/en/motcomop.xml
+02:58:37:206000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/en/motcomop.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from include INSTALL_FILE
+02:58:37:206000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/cs/motcomop.xml
+Goto to label: END
+02:58:37:206000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from include END
+02:58:37:206000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/da/motcomop.xml
+Goto to label: END
+02:58:37:206000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from include END
+02:58:37:206000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/de/motcomop.xml
+Goto to label: END
+02:58:37:206000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from include END
+02:58:37:206000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/es/motcomop.xml
+Goto to label: END
+02:58:37:206000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from include END
+02:58:37:206000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/fi/motcomop.xml
+Goto to label: END
+02:58:37:206000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from include END
+02:58:37:206000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/fr/motcomop.xml
+Goto to label: END
+02:58:37:206000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from include END
+02:58:37:206000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/hu/motcomop.xml
+Goto to label: END
+02:58:37:206000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from include END
+02:58:37:206000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/it/motcomop.xml
+Goto to label: END
+02:58:37:206000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from include END
+02:58:37:206000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/ja/motcomop.xml
+Goto to label: END
+02:58:37:206000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from include END
+02:58:37:206000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/ko/motcomop.xml
+Goto to label: END
+02:58:37:206000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from include END
+02:58:37:206000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/nl/motcomop.xml
+Goto to label: END
+02:58:37:206000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from include END
+02:58:37:206000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/pl/motcomop.xml
+Goto to label: END
+02:58:37:206000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from include END
+02:58:37:206000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/pt/motcomop.xml
+Goto to label: END
+02:58:37:206000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from include END
+02:58:37:206000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/ro/motcomop.xml
+Goto to label: END
+02:58:37:206000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from include END
+02:58:37:206000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/ru/motcomop.xml
+Goto to label: END
+02:58:37:206000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from include END
+02:58:37:206000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/sl/motcomop.xml
+Goto to label: END
+02:58:37:206000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from include END
+02:58:37:206000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/sv/motcomop.xml
+Goto to label: END
+02:58:37:206000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from include END
+02:58:37:206000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/tr/motcomop.xml
+Goto to label: END
+02:58:37:206000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from include END
+02:58:37:206000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/zh/motcomop.xml
+Goto to label: END
+02:58:37:206000 Status 0 from goto END
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/language/install.cmd
+02:58:37:206000 Status 0 from include END
+02:58:37:206000 Status 0 from setstr $LANG
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instlang.cmd
+02:58:37:206000 Status 0 from include $LANG
+...Motor Commutation installation finished
+02:58:37:206000 Status 0 from echo
+02:58:37:206000 Status 0 from setvar
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/motcom/install.cmd
+Goto to label: CONFIG_NEXT
+02:58:37:206000 Status 0 from selectmedia MMC
+02:58:37:206000 Status 0 from addvar
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+02:58:37:206000 Status 0 from getkey Option
+02:58:37:206000 Status 0 from setvar
+02:58:37:206000 Status 0 from setstr $TEMP1
+02:58:37:206000 Status 0 from getkey SISDesc
+02:58:37:206000 Status 0 from mediaexist Service Info System
+Goto to label: LOAD_OPTION
+02:58:37:206000 Status 0 from goto LOAD_OPTION
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/install.cmd
+02:58:37:700000 Status 0 from if END_LABEL
+Installing Service Information System
+02:58:37:700000 Status 0 from echo
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instlang.cmd
+02:58:37:700000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:39:391000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/en/sis_txt.xml
+02:58:39:391000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/en/sis_txt.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+02:58:39:391000 Status 0 from include INSTALL_FILE
+02:58:39:391000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:40:255000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/cs/sis_txt.xml
+02:58:40:255000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/cs/sis_txt.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+02:58:40:255000 Status 0 from include INSTALL_FILE
+02:58:40:255000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:41:135000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/da/sis_txt.xml
+02:58:41:135000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/da/sis_txt.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+02:58:41:135000 Status 0 from include INSTALL_FILE
+02:58:41:135000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:41:995000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/de/sis_txt.xml
+02:58:41:995000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/de/sis_txt.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+02:58:41:995000 Status 0 from include INSTALL_FILE
+02:58:41:995000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:42:871000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/es/sis_txt.xml
+02:58:42:871000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/es/sis_txt.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+02:58:42:871000 Status 0 from include INSTALL_FILE
+02:58:42:871000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:43:713000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/fi/sis_txt.xml
+02:58:43:713000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/fi/sis_txt.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+02:58:43:713000 Status 0 from include INSTALL_FILE
+02:58:43:713000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:44:583000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/fr/sis_txt.xml
+02:58:44:583000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/fr/sis_txt.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+02:58:44:583000 Status 0 from include INSTALL_FILE
+02:58:44:583000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:45:452000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/hu/sis_txt.xml
+02:58:45:452000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/hu/sis_txt.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+02:58:45:452000 Status 0 from include INSTALL_FILE
+02:58:45:452000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:46:313000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/it/sis_txt.xml
+02:58:46:313000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/it/sis_txt.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+02:58:46:313000 Status 0 from include INSTALL_FILE
+02:58:46:313000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:47:159000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/ja/sis_txt.xml
+02:58:47:159000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/ja/sis_txt.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+02:58:47:159000 Status 0 from include INSTALL_FILE
+02:58:47:159000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:48:6000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/ko/sis_txt.xml
+02:58:48:6000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/ko/sis_txt.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+02:58:48:6000 Status 0 from include INSTALL_FILE
+02:58:48:6000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:48:846000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/nl/sis_txt.xml
+02:58:48:846000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/nl/sis_txt.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+02:58:48:846000 Status 0 from include INSTALL_FILE
+02:58:48:846000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:49:695000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/pl/sis_txt.xml
+02:58:49:695000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/pl/sis_txt.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+02:58:49:695000 Status 0 from include INSTALL_FILE
+02:58:49:695000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:50:552000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/pt/sis_txt.xml
+02:58:50:552000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/pt/sis_txt.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+02:58:50:552000 Status 0 from include INSTALL_FILE
+02:58:50:552000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:51:375000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/ro/sis_txt.xml
+02:58:51:375000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/ro/sis_txt.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+02:58:51:375000 Status 0 from include INSTALL_FILE
+02:58:51:375000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:52:206000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/ru/sis_txt.xml
+02:58:52:206000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/ru/sis_txt.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+02:58:52:206000 Status 0 from include INSTALL_FILE
+02:58:52:206000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:53:30000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/sl/sis_txt.xml
+02:58:53:30000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/sl/sis_txt.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+02:58:53:30000 Status 0 from include INSTALL_FILE
+02:58:53:30000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:53:875000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/sv/sis_txt.xml
+02:58:53:875000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/sv/sis_txt.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+02:58:53:875000 Status 0 from include INSTALL_FILE
+02:58:53:875000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:54:693000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/tr/sis_txt.xml
+02:58:54:693000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/tr/sis_txt.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+02:58:54:693000 Status 0 from include INSTALL_FILE
+02:58:54:693000 Status 0 from setstr $LANG
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+Goto to label: INSTALL_FILE
+02:58:55:521000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/zh/sis_txt.xml
+02:58:55:521000 Status 0 from text C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/zh/sis_txt.xml
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/language/install.cmd
+02:58:55:521000 Status 0 from include INSTALL_FILE
+02:58:55:521000 Status 0 from setstr $LANG
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instlang.cmd
+02:58:55:521000 Status 0 from include $LANG
+02:58:56:181000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/sissys.cfg
+02:58:56:853000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/sismmc.cfg
+02:58:56:853000 Status 0 from setvar
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/options/sis/install.cmd
+Goto to label: CONFIG_NEXT
+02:58:56:853000 Status 0 from selectmedia MMC
+02:58:56:853000 Status 0 from addvar
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+Goto to label: END_OF_LOOP
+02:58:56:853000 Status 0 from getkey Option
+02:58:56:853000 Status 0 from setvar
+Goto to label: END_OF_FILE
+02:58:56:853000 Status 0 from goto END_OF_FILE
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instopt.cmd
+02:58:56:853000 Status 0 from loop END_OF_FILE
+02:58:56:853000 Status 0 from setstr $ANSWER
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Robots_1.10.0/install.cmd
+Goto to label: INSTALL_OPTIONS
+02:58:56:853000 Status 0 from if INSTALL_OPTIONS
+Goto to label: LOAD_CMD
+02:58:57:616000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Robots_1.10.0/options/install.cmd
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Robots_1.10.0/options/install.cmd
+Installing robot options
+02:58:57:616000 Status 0 from echo
+Goto to label: TRY_NEXT
+02:58:57:616000 Status 0 from getkey OPTCRB
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Robots_1.10.0/options/install.cmd
+02:58:57:616000 Status 0 from include Installing robot options
+Goto to label: END_LABEL
+02:58:57:616000 Status 0 from goto END_LABEL
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Robots_1.10.0/install.cmd
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Wizard_1.5.1/install.cmd
+Installing WIZARD Add-In
+02:58:58:516000 Status 0 from echo
+02:58:58:516000 Status 0 from getkey WIZARD
+02:58:58:516000 Status 0 from getkey Irb1Media
+02:58:58:516000 Status 0 from ifstr 14050_ROB1
+Goto to label: KnownRobotType
+02:58:58:516000 Status 0 from ifstr KnownRobotType
+02:58:58:516000 Status 0 from setenv
+02:58:58:516000 Status 0 from register $PRODUCTS/Wizard_1.5.1
+Goto to label: CopyFilesForKnown
+02:58:58:516000 Status 0 from direxist C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/HOME/Wizard
+02:58:59:230000 Status 0 from copy C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Wizard_1.5.1/Wizard/Wizard.pgf
+02:58:59:891000 Status 0 from copy C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Wizard_1.5.1/Wizard/Wizard.mod
+02:59:00:70000 Status 0 from copy C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Wizard_1.5.1/Wizard/Wizard_Params/1100_ROB1/Wizard_Params.sys
+02:59:00:754000 Status 0 from copy C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Wizard_1.5.1/Wizard/Wizard_LoadData.modx
+02:59:01:488000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Wizard_1.5.1/Config/Wizard_SYS_EXT.cfg
+02:59:02:164000 Status 0 from config C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Wizard_1.5.1/Config/Gripper_Common/Wizard_SYS.cfg
+Goto to label: END_LABEL
+02:59:02:164000 Status 0 from getkey OPTFCTRL
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/Wizard_1.5.1/install.cmd
+02:59:02:164000 Status 0 from selectmedia OPTFCTRL
+Goto to label: LOAD_CMD
+02:59:02:892000 Status 0 from fileexist C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instirbopt.cmd
+
+Script begin: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instirbopt.cmd
+02:59:02:892000 Status 0 from fileexist C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/DATA/EXT_MOC.cfg
+Goto to label: END_LABEL
+02:59:02:892000 Status 0 from goto END_LABEL
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/system/instirbopt.cmd
+02:59:02:892000 Status 0 from include END_LABEL
+02:59:02:892000 Status 0 from fileexist C:/#School/#Minor Industrial Automation/#Process and Safety/#Project/PS_diagrams/Robot_program/Process_and_Safety_V2/Process_and_Safety_V2/Virtual Controllers/CRB1100_4_47/internal/OPTIONS/SC/sc_cfg_list.xml
+Goto to label: SKIP_SC_CFG_LIST
+02:59:02:892000 Status 0 from goto SKIP_SC_CFG_LIST
+Simulated moc_io.
+02:59:02:892000 Status 0 from new motion
+moc_startup_done is false 0
+moc_startup_done is false 500
+02:59:03:892000 Status 0 from new rapid
+02:59:03:892000 Status 0 from new cab
+02:59:03:892000 Status 0 from invoke2 eio_system_set_cfg_output_format
+02:59:03:892000 Status 0 from setEioValidationLevel
+02:59:09:892000 Status 0 from delay
+System installation finished
+02:59:09:892000 Status 0 from echo
+restarting the controller ...
+
+24-01-23  12:21:22 MC0: type = STATE_CHANGE id = Operational code = 56 (10056)
+
+02:59:09:892000 Status 0 from restart
+Goto to label: NO_ERROR
+02:59:09:892000 Status 0 from goto NO_ERROR
+Script execution is stopped because of power-fail!
+Script end: C:/Users/mike kamerman/AppData/Local/ABB/RobotWare/RobotControl_7.10.0/install.cmd
