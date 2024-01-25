@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Products version="1.1">
-  <Product id="abb.robotics.robotos" name="RobotOS" version="9.0.0+159" versionName="9.0.0" installPath="$PRODUCTS/RobotOS_9.0.0" productMediaPath="$PRODUCTS/RobotOS_9.0.0/RobotOS_9.0.0" manifestFile="abb.robotics.robotos.rmf" installationTime="2024-01-23 12:21:17"/>
-  <Product id="abb.robotics.robotcontrol" name="RobotControl" version="7.10.0+329" versionName="7.10.0" installPath="$PRODUCTS/RobotControl_7.10.0" productMediaPath="$PRODUCTS/RobotControl_7.10.0/RobotControl_7.10.0" manifestFile="abb.robotics.robotcontrol.rmf" installationTime="2024-01-23 12:21:17"/>
-  <Product id="abb.robotics.robots" name="Robots" version="1.10.0+107" versionName="1.10.0" installPath="$PRODUCTS/Robots_1.10.0" productMediaPath="$PRODUCTS/Robots_1.10.0/Robots_1.10.0" manifestFile="abb.robotics.robots.rmf" installationTime="2024-01-23 12:21:17"/>
-  <Product id="abb.cn.robotics.wizard" name="Wizard" version="1.5.1" versionName="1.5.1" installPath="$PRODUCTS/Wizard_1.5.1" productMediaPath="$PRODUCTS/Wizard_1.5.1/Wizard_1.5.1" manifestFile="abb.cn.robotics.wizard_1.5.1.rmf" installationTime="2024-01-23 12:21:17"/>
-  <Product id="abb.robotics.robotwareinstaller" name="RobotWareInstallationUtilities" version="" versionName="" productMediaPath=""/>
-</Products>
